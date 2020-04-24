@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Стартовый шаблон</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Roboto-Condensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
+</head>
+<body>
+<header>
+  <div class="main-nav">
+    <div class="main-nav__logo-container">
+      <img class="main-nav__logo" src="img/logo-icon.svg" width="52" height="52" alt="логотип компании">
+      <div class="main-nav__title-block">
+        <p class="main-nav__title">Smart Device</p>
+        <p class="main-nav__title-info">умные технологии</p>
+      </div>
+    </div>
+    <div class="main-nav__contact-block">
+      <a href="#" class="main-nav__mail-link"><span class="main-nav__disabled">info@sd.ru</span></a>
+      <a href="#" class="main-nav__phone-link"><span class="main-nav__disabled">+7 (495) 000 52 52</span></a>
+      <button type="button" class="main-nav__header-btn">Заказать звонок</button>
+    </div>
+  </div>
+  <div class="header-content">
+    <div class="header-content__text-block">
+      <h1 class="header-content__main-title">Печатные платы</h1>
+      <p class="header-content__title-info">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <a href="#" class="header-content__link">Получить бесплатную консультацию</a>
+      <a href="#" class="header-content__link-mobail">Бесплатная консультация</a>
+      <a href="#" class="header-content__scroll-link">Скролл вниз</a>
+    </div>
+    <div class="header-content__img-block">
+      <picture>
+        <source type="image/webp" media="(min-width: 1024px)" srcset="img/header-img.webp 1x, img/header-img@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/header-img-tablet.webp 1x, img/header-img-tablet@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/header-img-mobail.webp 1x, img/header-img-mobail@2x.webp 2x">
+
+        <source media="(min-width: 768px)" srcset="img/header-img-tablet.png 1x, img/header-img-tablet@2x.png 2x">
+        <source media="(max-width: 767px)" srcset="img/header-img-mobail.png 1x, img/header-img-mobail@2x.png 2x">
+        <img class="header-content__img" src="img/header-img.png" width="705" height="515" alt="контентная картинка чипов">
+      </picture>
+    </div>
+  </div>
+</header>
+</body>
+</html>

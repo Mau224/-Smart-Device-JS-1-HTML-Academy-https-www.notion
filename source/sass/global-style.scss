@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "PtMono";
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/Roboto-Condensed.woff2") format("woff2"),
+    url("../fonts/Roboto-Condensed.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background: white;
+  color: black;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+a {
+  font-family: "PtMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+}
+
+p {
+  margin: 0;
+  color: #ffffff;
+}
+
+header {
+  position: relative;
+  background-image: url("../img/backheader.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+  }
+}
