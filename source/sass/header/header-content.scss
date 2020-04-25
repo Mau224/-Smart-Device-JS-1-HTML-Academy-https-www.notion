@@ -54,14 +54,21 @@
   position: absolute;
   transform: rotate(-90deg);
   bottom: 80px;
-  left: 42px;
+  left: -45px;
   opacity: 0.5;
 }
 
 .header-content__img {
   position: relative;
-  bottom: 63px;
-  right: 59px;
+  bottom: 13px;
+  right: 89px;
+}
+
+.header-content__img-block {
+  width: 640px;
+  z-index: 200;
+  background: url("../../img/dable-polygon.svg");
+  background-repeat: no-repeat;
 }
 
 .header-content__link-mobail {
@@ -114,6 +121,12 @@
   .header-content {
     margin-top: 116px;
   }
+
+  .header-content__img-block {
+    background: url("../../img/back-head-polygon.svg") 90px,
+    url("../../img/back-head-mini-polygon.svg") -31px 204px;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -126,7 +139,14 @@
     margin-left: 14px;
   }
 
+  .header-content__img-block {
+    position: relative;
+    z-index: 90;
+  }
+
   .header-content__text-block {
+    left: 0;
+
     &::before {
       width: 33px;
       top: 137px;
@@ -153,16 +173,13 @@
     height: 220px;
     bottom: -45px;
     left: 22px;
-    z-index: 100;
+    z-index: 90;
   }
 
   .header-content__link {
     display: none;
   }
 
-  .header-content__text-block {
-    left: 0;
-  }
 
   .header-content__link-mobail {
     display: block;
