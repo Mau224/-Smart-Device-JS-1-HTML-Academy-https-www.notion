@@ -1,15 +1,10 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
-
-pageHeader.classList.remove('page-header--nojs');
-
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
+$(function () {
+  $('#phone').mask('8(999) 999-99-99');
 });
+
+$(document).ready(function () {
+  $('.block__title').click(function (event) {
+    $(this).toggleClass('active').next().slideToggle(300);
+  })
+})
