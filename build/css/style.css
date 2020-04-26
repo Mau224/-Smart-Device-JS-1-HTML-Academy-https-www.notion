@@ -557,7 +557,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding: 0; }
 
 .tabs__container {
   background: #1b2d37;
@@ -642,14 +643,21 @@ header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 0; }
   .tabs__item {
     margin: 0;
     margin-bottom: 46px; }
   .tabs__title {
     margin: 0;
-    width: 613px;
-    margin-right: 277px; } }
+    width: 703px;
+    margin-left: 46px;
+    font-size: 32px; } }
+
+@media (max-width: 767px) {
+  .tabs__title {
+    width: 280px;
+    font-size: 28px; } }
 
 .form__container {
   background: #00b2ff;
@@ -984,7 +992,8 @@ input:checked + label::before {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin-left: 0; }
   .block__title {
     cursor: pointer; } }
 
@@ -1019,14 +1028,16 @@ input:checked + label::before {
 
 @media (max-width: 767px) {
   .footer__office-list {
-    display: none; }
+    display: none;
+    padding-left: 15px; }
   .footer__office {
     margin-top: 0; }
   .footer__office-title {
     padding-top: 30px;
     border-top: 1px solid #626962;
     margin-bottom: 0;
-    position: relative; }
+    position: relative;
+    padding-left: 15px; }
     .footer__office-title::before {
       content: "";
       width: 16px;
@@ -1103,14 +1114,16 @@ input:checked + label::before {
 @media (max-width: 767px) {
   .footer__site-list {
     display: none;
-    margin-left: 0; }
+    margin-left: 0;
+    padding-left: 15px; }
   .footer__site {
     margin-right: 0; }
   .footer__site-title {
     margin-right: 0;
     border-top: 1px solid #626962;
     padding-top: 30px;
-    position: relative; }
+    position: relative;
+    padding-left: 15px; }
     .footer__site-title::before {
       content: "";
       width: 16px;

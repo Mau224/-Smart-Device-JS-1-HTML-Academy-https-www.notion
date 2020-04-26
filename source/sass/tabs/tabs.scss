@@ -3,6 +3,7 @@
   list-style: none;
   justify-content: center;
   padding-bottom: 100px;
+  padding: 0;
 }
 
 .tabs__container {
@@ -86,6 +87,7 @@
   .tabs__list {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .tabs__item {
@@ -95,7 +97,15 @@
 
   .tabs__title {
     margin: 0;
-    width: 613px;
-    margin-right: 277px;
+    width: 703px;
+    margin-left: 46px;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .tabs__title {
+    width: 280px;
+    font-size: 28px;
   }
 }
