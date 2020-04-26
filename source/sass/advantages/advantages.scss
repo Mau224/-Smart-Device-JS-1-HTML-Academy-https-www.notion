@@ -3,28 +3,29 @@
 
   background: url("../../img/back-big-polygon.svg");
   background-repeat: no-repeat;
-  background-position-y: 188px;
-  background-position-x: 350px;
-  padding-bottom: 110px;
+  background-position-y: 193px;
+  background-position-x: 599px;
+  padding-bottom: 78px;
 }
 
 .advantages__list {
   display: flex;
-  width: 1350px;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
   position: relative;
   z-index: 200;
+  margin-top: 128px;
+  margin-left: 374px;
 
   &::before {
     content: "";
     position: absolute;
-    left: -128px;
-    top: -106px;
+    left: -174px;
+    z-index: 10;
+    top: -68px;
     width: 300px;
     height: 300px;
-    z-index: 10;
     background: url("../../img/back-polygon.svg");
     background-repeat: no-repeat;
   }
@@ -43,7 +44,7 @@
 }
 
 .advantages__item {
-  width: 570px;
+  width: 511px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +52,7 @@
   border-left: 2px solid $blue;
   list-style: none;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   padding-left: 55px;
   height: 300px;
   z-index: 100;
@@ -62,6 +63,13 @@
   font-size: 24px;
   line-height: 34px;
   color: $blue;
+  margin-left: -10px;
+  position: relative;
+  top: -14px;
+
+  &--bottom {
+    margin-top: -25px;
+  }
 }
 
 .advantages__text {
@@ -70,6 +78,11 @@
   line-height: 22px;
   color: #666666;
   width: 483px;
+  margin-left: -10px;
+
+  &--bottom {
+    margin-top: -1px;
+  }
 }
 
 .advantages__item:hover .advantages__text {
@@ -87,6 +100,13 @@
 
 .advantages__item-icon {
   fill: $blue;
+  position: relative;
+  top: -35px;
+  right: 11px;
+
+  &--bottom {
+    top: -58px;
+  }
 }
 
 .advantages__item:hover svg {
@@ -95,17 +115,21 @@
 
 @media (max-width: $tablet-width) {
   .advantages__item {
-    width: 345px;
+    width: 316px;
     height: 306px;
     padding-left: 25px;
+
+    &--tablet {
+      margin-right: 0;
+    }
   }
 
   .advantages__list {
-    max-width: 925px;
-    margin-top: 54px;
     position: relative;
     display: flex;
     justify-content: center;
+    margin: 0;
+    margin-top: 54px;
 
     &::before {
       display: none;
@@ -118,6 +142,14 @@
 
   .advantages__text {
     width: 291px;
+  }
+
+  .advantages__item-icon {
+    top: -16px;
+
+    &--bottom {
+      top: -42px;
+    }
   }
 }
 

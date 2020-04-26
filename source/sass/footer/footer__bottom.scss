@@ -12,6 +12,7 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-right: 64px;
 }
 
 .footer__item-info {
@@ -20,14 +21,24 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+
   color: #1b2d37;
+
+  opacity: 0.5;
+
+  &--margin {
+    margin-right: 40px;
+  }
 }
 
 .footer__block-info {
   display: flex;
   justify-content: space-around;
-  width: 830px;
+  width: 910px;
+  margin-left: 31px;
 }
 
 @media (max-width: $tablet-width) {
@@ -41,6 +52,7 @@
     padding-left: 0;
     justify-content: space-around;
     align-items: center;
+    margin-right: 0;
   }
 
   .footer__block-info {

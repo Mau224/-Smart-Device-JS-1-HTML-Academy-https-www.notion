@@ -5,9 +5,13 @@
   padding-top: 96px;
 }
 
+.form__block {
+  margin-right: 168px;
+}
+
 .form__input-block {
   display: flex;
-  margin-top: 50px;
+  margin-top: 49px;
 
   &::before {
     content: "";
@@ -26,31 +30,43 @@
   align-items: center;
 }
 
+.form__info {
+  font-family: "PtMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
 
 .form__input {
   font-family: "PtMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  background: #00b2ff;
-  border: 1px solid #ffffff;
+  background: deepskyblue;
+  border: none;
   border-radius: 5px;
-  width: 270px;
   height: 50px;
-  margin-right: 31px;
-  margin-bottom: 41px;
-  padding-left: 10px;
+  margin-bottom: 37px;
+  color: #ffffff;
+  width: 246px;
+  margin-right: 34px;
+  padding-left: 21px;
 }
 
 .from__textarea {
   font-family: "PtMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  background: $blue;
-  border: 1px solid #ffffff;
+  background: deepskyblue;
   border-radius: 5px;
-  width: 580px;
-  padding-left: 10px;
-  padding-top: 10px;
+  border: none;
+  width: 547px;
+  height: 141px;
+  padding-left: 24px;
+  padding-top: 15px;
 }
 
 .form__submit {
@@ -73,12 +89,17 @@
   justify-content: center;
   align-items: center;
   align-content: baseline;
-  margin-top: 43px;
+  margin-top: 27px;
   padding-bottom: 101px;
 }
 
 .form__checkbox-text {
   width: 263px;
+  font-family: "PtMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .form__checkbox {
@@ -126,7 +147,20 @@ input:checked + label::before {
 
 .form__img {
   position: relative;
-  top: 70px;
+  top: 66px;
+  left: 195px;
+}
+
+input[type="text"] {
+  color: #ffffff;
+}
+
+input[type="text"]::placeholder {
+  color: #ffffff;
+}
+
+textarea[name="comment"]::placeholder {
+  color: #ffffff;
 }
 
 @media (max-width: $tablet-width) {
@@ -138,6 +172,10 @@ input:checked + label::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .form__block {
+    margin-right: 0;
   }
 }
 
@@ -167,6 +205,7 @@ input:checked + label::before {
   .form__input {
     margin: 0;
     margin-bottom: 31px;
+    width: 274px;
   }
 
   .form__submit {

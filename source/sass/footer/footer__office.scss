@@ -1,6 +1,7 @@
 .footer__office-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 24px;
 }
 
 .footer__office-title {
@@ -14,7 +15,7 @@
   align-items: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-
+  pointer-events: none;
   color: #1b2d37;
 }
 
@@ -27,16 +28,20 @@
 
 .footer__office {
   margin-top: 65px;
+  position: relative;
+  left: 148px;
 }
 
 
 @media (max-width: $mobile-width) {
   .footer__office-list {
     display: none;
+    padding-left: 15px;
   }
 
   .footer__office {
     margin-top: 0;
+    left: 0;
   }
 
   .footer__office-title {
@@ -44,6 +49,8 @@
     border-top: 1px solid #626962;
     margin-bottom: 0;
     position: relative;
+    padding-left: 15px;
+    pointer-events: auto;
 
     &::before {
       content: "";

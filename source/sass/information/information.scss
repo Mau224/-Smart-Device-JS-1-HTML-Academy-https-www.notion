@@ -3,6 +3,7 @@
   line-height: 51px;
   color: #666666;
   margin-bottom: 20px;
+  margin-left: 9px;
 }
 
 .information__text {
@@ -11,6 +12,7 @@
   line-height: 22px;
   color: #666666;
   width: 984px;
+  margin-left: 8px;
 
   &--two {
     margin-top: 20px;
@@ -27,6 +29,7 @@
 .information__container {
   margin: 0 auto;
   position: relative;
+  margin-left: 548px;
 
   &::before {
     content: "";
@@ -47,10 +50,11 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  padding: 14px 40px;
   border-radius: 5px;
   color: #00b2ff;
   border: 2px solid $blue;
+  padding: 14px 48px;
+  margin-left: 8px;
 }
 
 .information__img {
@@ -79,6 +83,10 @@
   .information__tablet {
     display: inline-block;
   }
+
+  .information__container {
+    margin-left: 203px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -92,5 +100,9 @@
 
   .information__text {
     width: 265px;
+  }
+
+  .information__container {
+    margin-left: 5px;
   }
 }

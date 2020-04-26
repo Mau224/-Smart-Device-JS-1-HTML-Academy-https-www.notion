@@ -90,6 +90,7 @@ header {
   position: relative;
   background-image: url("../img/back-head.jpg");
   background-repeat: no-repeat;
+  padding-bottom: 39px;
 }
 
 @media (max-width: $tablet-width) {
@@ -97,5 +98,6 @@ header {
     display: flex;
     flex-direction: column;
     background-position: bottom;
+    padding-bottom: 116px;
   }
 }
