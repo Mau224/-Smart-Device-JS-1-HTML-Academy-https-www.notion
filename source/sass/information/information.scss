@@ -21,23 +21,23 @@
 }
 
 .information {
-  margin: 0 auto;
   display: flex;
-  margin-bottom: 110px;
+  margin: 0 auto 99px;
+  max-width: 1200px;
 }
 
 .information__container {
   margin: 0 auto;
   position: relative;
-  margin-left: 548px;
+  display: flex;
 
   &::before {
     content: "";
     position: absolute;
     width: 640px;
     height: 640px;
-    left: -670px;
-    top: -320px;
+    left: -468px;
+    top: -330px;
     transform: rotate(180deg);
     background: url("../../img/back-big-polygon.svg");
     background-repeat: no-repeat;
@@ -58,13 +58,14 @@
 }
 
 .information__img {
-  position: absolute;
   transform: rotate(-0deg);
-  left: -200px;
+  position: relative;
+  left: -17px;
 }
 
 .information__text-block {
   padding-bottom: 20px;
+  margin-left: -36px;
 }
 
 .information__tablet {
@@ -74,6 +75,22 @@
 @media (max-width: $tablet-width) {
   .information__text {
     width: 531px;
+    margin-left: 0;
+
+    &--two {
+      margin-top: 20px;
+      margin-bottom: 53px;
+    }
+  }
+
+  .information__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: -2px;
+    margin-top: -6px;
+    line-height: 140.62%;
+    margin-bottom: 25px;
   }
 
   .information__disabled {
@@ -85,7 +102,22 @@
   }
 
   .information__container {
-    margin-left: 203px;
+  }
+
+  .information__img {
+    width: 242px;
+    height: 363px;
+    left: -9px;
+    top: -7px;
+  }
+
+  .information__link {
+    padding: 14px 48px;
+    margin-left: 1px;
+  }
+
+  .information {
+    margin: 0 auto 67px;
   }
 }
 
@@ -98,11 +130,38 @@
     margin-left: 17px;
   }
 
-  .information__text {
-    width: 265px;
-  }
-
   .information__container {
     margin-left: 5px;
+  }
+
+  .information__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-top: 11px;
+    margin-left: -7px;
+    margin-bottom: 20px;
+  }
+
+  .information__text {
+    width: 294px;
+    margin-left: -5px;
+
+    &--two {
+      margin-top: 39px;
+      margin-bottom: 42px;
+    }
+  }
+
+  .information__link {
+    padding: 14px 51px;
+    margin-left: -5px;
+    text-transform: uppercase;
+  }
+
+  .information {
+    max-width: 320px;
+    margin: 0 auto 60px;
   }
 }

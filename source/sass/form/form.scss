@@ -7,6 +7,32 @@
 
 .form__block {
   margin-right: 168px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    transform: rotate(60deg);
+    right: -338px;
+    top: 209px;
+    height: 300px;
+    background: url("../../img/back-polygon.svg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    transform: rotate(-5deg);
+    right: -338px;
+    top: -35px;
+    height: 300px;
+    background: url("../../img/polygon-mini-form.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .form__input-block {
@@ -53,7 +79,16 @@
   color: #ffffff;
   width: 246px;
   margin-right: 34px;
-  padding-left: 21px;
+  padding-left: 20px;
+
+  &::placeholder {
+    font-family: "PtMono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    transform: translateY(-10px) translateY(50%);
+  }
 }
 
 .from__textarea {
@@ -65,8 +100,17 @@
   border: none;
   width: 547px;
   height: 141px;
-  padding-left: 24px;
+  padding-left: 20px;
   padding-top: 15px;
+
+  &::placeholder {
+    font-family: "PtMono", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    transform: translateY(-11px) translateY(50%);
+  }
 }
 
 .form__submit {
@@ -177,6 +221,58 @@ textarea[name="comment"]::placeholder {
   .form__block {
     margin-right: 0;
   }
+
+  .form__title {
+    margin-top: -16px;
+    margin-left: 51px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .form__info {
+    margin-top: 16px;
+    margin-left: 54px;
+  }
+
+  .form__content {
+    margin-left: 55px;
+  }
+
+  .form__input {
+    width: 255px;
+    margin-bottom: 42px;
+  }
+
+  .from__textarea {
+    width: 562px;
+  }
+
+  .form__submit-block {
+    margin-top: 35px;
+    padding-bottom: 89px;
+  }
+
+  .form__input-block {
+    margin-top: 53px;
+  }
+
+  .form__submit {
+    width: 279px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-top: 14px;
+    margin-left: -8px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    margin-right: 39px;
+  }
 }
 
 @media (max-width: $mobile-width) {
@@ -185,15 +281,18 @@ textarea[name="comment"]::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 23px;
   }
 
   .from__textarea {
     width: 270px;
+    height: 89px;
   }
 
   .form__submit-block {
     flex-direction: column;
-    padding-bottom: 101px;
+    padding-bottom: 22px;
+    margin-top: 25px;
   }
 
   form {
@@ -209,7 +308,9 @@ textarea[name="comment"]::placeholder {
   }
 
   .form__submit {
+    width: 288px;
     margin: 0;
+    margin-left: 10px;
   }
 
   .form__check-block {
@@ -217,17 +318,21 @@ textarea[name="comment"]::placeholder {
     align-content: baseline;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    margin-left: 18px;
+    margin-top: 10px;
   }
 
   .form__title {
     width: 310px;
     margin-left: 20px;
+    font-size: 28px;
+    line-height: 140.62%;
   }
 
   .form__info {
-    width: 200px;
-    margin-left: 20px;
+    width: 238px;
+    margin-left: 24px;
+    margin-right: 0;
   }
 
   .from__block {
@@ -236,4 +341,13 @@ textarea[name="comment"]::placeholder {
     justify-content: center;
     align-items: center;
   }
+
+  .form__container {
+    padding-top: 42px;
+  }
+
+  .form__content {
+    margin-left: 3px;
+  }
+
 }

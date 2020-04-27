@@ -75,11 +75,21 @@ a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
+
+  &:hover {
+    color: $blue;
+  }
 }
 
 p {
   margin: 0;
   color: #ffffff;
+}
+
+button {
+  &:hover {
+    color: black;
+  }
 }
 
 span {
@@ -88,8 +98,9 @@ span {
 
 header {
   position: relative;
-  background-image: url("../img/back-head.jpg");
+  background-image: url("../img/head-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   padding-bottom: 39px;
 }
 
@@ -97,7 +108,20 @@ header {
   header {
     display: flex;
     flex-direction: column;
+    background-image: url("../img/backheader-tablet.png");
+    background-repeat: no-repeat;
     background-position: bottom;
-    padding-bottom: 116px;
+    background-position-x: 2px;
+    background-position-y: 1px;
+    padding-bottom: 186px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  header {
+    padding-bottom: 76px;
+    background-image: url("../img/head-mobail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

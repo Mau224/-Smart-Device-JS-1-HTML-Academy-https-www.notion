@@ -29,7 +29,7 @@
 .footer__office {
   margin-top: 65px;
   position: relative;
-  left: 148px;
+  //left: 148px;
 }
 
 
@@ -37,11 +37,14 @@
   .footer__office-list {
     display: none;
     padding-left: 15px;
+    margin-top: 31px;
+    width: 200px;
+    margin-bottom: -6px;
   }
 
   .footer__office {
     margin-top: 0;
-    left: 0;
+    left: 1px;
   }
 
   .footer__office-title {
@@ -51,6 +54,7 @@
     position: relative;
     padding-left: 15px;
     pointer-events: auto;
+    margin-top: 9px;
 
     &::before {
       content: "";
@@ -59,7 +63,7 @@
       background-color: #c4c4c4;
       position: absolute;
       top: 35px;
-      right: 35px;
+      right: 0;
       transition: all 0.3s ease 0s;
     }
 
@@ -71,7 +75,7 @@
       position: absolute;
       transform: rotate(90deg);
       top: 35px;
-      right: 35px;
+      right: 0;
       transition: all 0.3s ease 0s;
     }
   }

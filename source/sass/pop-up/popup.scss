@@ -4,7 +4,7 @@
 
 .popup-fade::before {
   content: "";
-  background: #000;
+  background: #000000;
   position: fixed;
   left: 0;
   top: 0;
@@ -16,11 +16,10 @@
 
 .popup {
   position: fixed;
-  top: 20%;
-  left: 50%;
-  padding: 20px;
-  width: 490px;
-  margin-left: -200px;
+  top: 16%;
+  left: 49%;
+  width: 448px;
+  margin-left: -198px;
   background: $blue;
   border: 1px solid orange;
   border-radius: 4px;
@@ -31,6 +30,7 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding: 20px 9px 20px 30px;
 }
 
 
@@ -46,13 +46,15 @@
     height: 1px;
     transform: rotate(45deg);
     background-color: #ffffff;
-    right: -238px;
+    right: -216px;
+    top: -4px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    right: -238px;
+    right: -216px;
+    top: -4px;
     width: 23px;
     height: 1px;
     transform: rotate(-45deg);
@@ -75,7 +77,7 @@
   border: none;
   padding-top: 15px;
   padding-bottom: 15px;
-  width: 412px;
+  width: 388px;
   padding-left: 25px;
   margin-bottom: 30px;
 }
@@ -89,27 +91,30 @@
   line-height: 22px;
   background-color: #60c4ff;
   border: none;
-  width: 412px;
   padding-top: 14px;
+  height: 88px;
+  width: 387px;
   padding-left: 25px;
 }
 
 
 .popup__submit {
-  border: 2px solid #ffffff;
-  background-color: $blue;
-  border-radius: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 437px;
-  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  background-color: #00b2ff;
+  border-radius: 5px;
+  padding: 15px 25px;
+  width: 409px;
+  color: #ffffff;
+  margin-top: 24px;
+  margin-right: 24px;
 }
 
 .popup__check-block {
@@ -117,25 +122,53 @@
   align-items: center;
   justify-content: center;
   align-content: baseline;
-  margin-right: 63px;
+  margin-left: -71px;
+  margin-top: 15px;
 }
 
 
 .popup__info {
   width: 382px;
   text-align: left;
-  margin-bottom: 30px;
   margin-right: 53px;
+  font-family: "PtMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 32px;
 }
 
 .popup__title {
-  margin-right: 180px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  margin-right: 234px;
+  margin-top: 10px;
 }
 
 .popup__checkbox-text {
   width: 317px;
+  font-family: "PtMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  opacity: 0.8;
+
+  margin-left: 13px;
+  margin-top: -6px;
 }
 
+textarea[name="text"]::placeholder {
+  color: #ffffff;
+}
 
 @media (max-width: $tablet-width) {
   .popup {

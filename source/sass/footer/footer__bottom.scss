@@ -43,6 +43,9 @@
 
 @media (max-width: $tablet-width) {
   .footer__item-info {
+    margin-right: 10px;
+    margin-left: -3px;
+
     &--disabled {
       display: none;
     }
@@ -50,7 +53,8 @@
 
   .footer__bottom-list {
     padding-left: 0;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 23px;
     align-items: center;
     margin-right: 0;
   }
@@ -63,5 +67,13 @@
 @media (max-width: $mobile-width) {
   .footer__bottom-list {
     flex-direction: column;
+    padding-top: 26px;
+  }
+
+  .footer__item-info {
+    &--mobail {
+      margin-top: 21px;
+      margin-left: 29px;
+    }
   }
 }

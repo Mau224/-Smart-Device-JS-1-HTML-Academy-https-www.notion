@@ -29,6 +29,7 @@
   text-transform: uppercase;
   color: #1b2d37;
   pointer-events: none;
+  display: flex;
 }
 
 .footer__site-item {
@@ -46,14 +47,23 @@
 @media (max-width: $tablet-width) {
   .footer__site-list {
     height: auto;
+    margin-left: -9px;
+  }
+
+  .footer__site-title {
+    margin-bottom: 17px;
+    margin-left: -5px;
   }
 
   .footer__site {
     margin-right: 0;
+    margin-top: 32px;
+    margin-left: 31px;
   }
 
   .footer__site-item {
     margin-right: 0;
+    margin-bottom: -3px;
   }
 }
 
@@ -66,14 +76,22 @@
 
   .footer__site {
     margin-right: 0;
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   .footer__site-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     margin-right: 0;
     border-top: 1px solid #626962;
     padding-top: 30px;
     position: relative;
-    padding-left: 15px;
+    padding-left: 22px;
     pointer-events: auto;
 
     &::before {
@@ -82,8 +100,8 @@
       height: 1px;
       background-color: #c4c4c4;
       position: absolute;
-      top: 35px;
-      right: 35px;
+      top: 37px;
+      right: 0;
       transition: all 0.3s ease 0s;
     }
 
@@ -94,8 +112,8 @@
       background-color: #c4c4c4;
       position: absolute;
       transform: rotate(90deg);
-      top: 35px;
-      right: 35px;
+      top: 37px;
+      right: 0;
       transition: all 0.3s ease 0s;
     }
   }

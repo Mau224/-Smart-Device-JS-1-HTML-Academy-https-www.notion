@@ -1,0 +1,30 @@
+header {
+  position: relative;
+  background-image: url("../img/head-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 39px;
+}
+
+@media (max-width: $tablet-width) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/backheader-tablet.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 2px;
+    background-position-y: 1px;
+    background-size: 100% 100%;
+    padding-bottom: 186px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  header {
+    padding-bottom: 76px;
+    background-image: url("../img/head-mobail.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
