@@ -11,23 +11,23 @@
 }
 
 .footer__title-info {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
 
   color: #788891;
-  margin-top: 5px;
-  margin-left: -10px;
+  margin-top: 8px;
+  margin-left: -4px;
 }
 
 .footer__social-list {
   list-style: none;
   display: flex;
   position: relative;
-  left: -52px;
-  top: 31px;
+  left: -47px;
+  top: 34px;
 }
 
 .footer__social-logo {
@@ -43,7 +43,7 @@
 .footer__social {
   margin-top: 71px;
   position: relative;
-  left: 109px;
+  left: 103px;
   top: -8px;
 }
 
@@ -101,7 +101,7 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    margin-left: 60px;
+    margin-left: 73px;
 
     align-items: center;
     letter-spacing: 0.04em;
@@ -112,15 +112,16 @@
 
   .footer__social-list {
     top: 0;
-    left: 2px;
+    left: 7px;
   }
 
   .footer__title {
-    left: 3px;
+    left: 8px;
   }
 
   .footer__title-info {
-    margin-left: 11px;
+    margin-left: 9px;
+    margin-top: 6px;
   }
 }
 
@@ -158,5 +159,9 @@
 
   .footer__social-logo {
     margin-left: -13px;
+  }
+
+  .footer__title-info {
+    margin-top: 4px;
   }
 }

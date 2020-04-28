@@ -159,8 +159,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 48px 0 0;
-    margin-right: -14px;
+    margin: 52px -14px 0 0;
 
     &::before {
       display: none;
@@ -175,7 +174,6 @@
     width: 291px;
     margin-left: 2px;
     margin-top: 1px;
-
   }
 
   .advantages__item-icon {
@@ -260,8 +258,7 @@
     flex-direction: column;
     justify-content: center;
     max-width: 320px;
-    margin: 0 auto;
-    margin-top: 29px;
+    margin: 37px auto 0;
   }
 
   .advantages__container {

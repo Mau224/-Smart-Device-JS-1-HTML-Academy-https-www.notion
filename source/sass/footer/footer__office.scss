@@ -27,9 +27,17 @@
 }
 
 .footer__office {
-  margin-top: 65px;
   position: relative;
-  //left: 148px;
+  left: 147px;
+  margin-top: 68px;
+}
+
+@media (max-width: $tablet-width) {
+  .footer__office {
+    position: relative;
+    top: -36px;
+    left: 126px;
+  }
 }
 
 
@@ -37,14 +45,19 @@
   .footer__office-list {
     display: none;
     padding-left: 15px;
-    margin-top: 31px;
+    margin-top: 66px;
     width: 200px;
-    margin-bottom: -6px;
+    margin-bottom: -43px;
   }
 
   .footer__office {
     margin-top: 0;
     left: 1px;
+  }
+
+  .footer__social-list {
+    left: -15px;
+    top: 11px;
   }
 
   .footer__office-title {
@@ -55,6 +68,7 @@
     padding-left: 15px;
     pointer-events: auto;
     margin-top: 9px;
+    top: 35px;
 
     &::before {
       content: "";
