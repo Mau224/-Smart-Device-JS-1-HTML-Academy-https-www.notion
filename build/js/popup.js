@@ -1,16 +1,19 @@
-var elements = document.querySelectorAll('input, textarea');
+'use strict';
 
-function checkValidity() {};
+if (window.localStorage) {
+  var elements = document.querySelectorAll('[name]');
 
-for (i=0; i<elements.length; i++) {
-  (function(element) {
-    var id = element.getAttribute('id');
-    element.value = sessionStorage.getItem(id); // обязательно наличие у элементов id
-    element.oninput = function() {
-      sessionStorage.setItem(id, element.value);
-      checkValidity();
-    };
-  })(elements[i]);
+  for (var i = 0, length = elements.length; i < length; i++) {
+    (function(element) {
+      var name = element.getAttribute('name');
+
+      element.value = localStorage.getItem(name) || '';
+
+      element.onkeyup = function() {
+        localStorage.setItem(name, element.value);
+      };
+    })(elements[i]);
+  }
 }
 
 
