@@ -1,12 +1,20 @@
 .advantages__container {
   margin: 0 auto;
-
-  background: url("../../img/back-big-polygon.svg");
-  background-repeat: no-repeat;
-  background-position-y: 193px;
-  background-position-x: 271px;
+  position: relative;
   padding-bottom: 78px;
   max-width: 1250px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 692px;
+    height: 730px;
+    left: 235px;
+    top: 33px;
+    background-image: url("../../img/backpolygon-advantages.svg");
+    background-repeat: no-repeat;
+    z-index: 50;
+  }
 }
 
 .advantages__list {

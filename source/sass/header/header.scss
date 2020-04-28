@@ -1,30 +1,42 @@
 header {
   position: relative;
-  background-image: url("../img/head-desktop.jpg");
+  background-image: url("../../img/head-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 39px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/head-desktop@2x.jpg");
+  }
 }
 
 @media (max-width: $tablet-width) {
   header {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/backheader-tablet.png");
+    background-image: url("../../img/backheader-tablet.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: 2px;
     background-position-y: 1px;
     background-size: 100% 100%;
     padding-bottom: 186px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/backheader-tablet@2x.png");
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   header {
     padding-bottom: 76px;
-    background-image: url("../img/head-mobail.jpg");
+    background-image: url("../../img/head-mobail.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/backhead-mobail@2x.jpg");
+    }
   }
 }

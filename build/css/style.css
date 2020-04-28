@@ -110,10 +110,13 @@ header {
 
 header {
   position: relative;
-  background-image: url("../img/head-desktop.jpg");
+  background-image: url("../../img/head-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 39px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    header {
+      background-image: url("../../img/head-desktop@2x.jpg"); } }
 
 @media (max-width: 1023px) {
   header {
@@ -124,20 +127,26 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url("../img/backheader-tablet.png");
+    background-image: url("../../img/backheader-tablet.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: 2px;
     background-position-y: 1px;
     background-size: 100% 100%;
     padding-bottom: 186px; } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    header {
+      background-image: url("../../img/backheader-tablet@2x.png"); } }
 
 @media (max-width: 767px) {
   header {
     padding-bottom: 76px;
-    background-image: url("../img/head-mobail.jpg");
+    background-image: url("../../img/head-mobail.jpg");
     background-repeat: no-repeat;
     background-position: center; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    header {
+      background-image: url("../../img/backhead-mobail@2x.jpg"); } }
 
 .main-nav {
   display: -webkit-box;
@@ -449,12 +458,19 @@ header {
 
 .advantages__container {
   margin: 0 auto;
-  background: url("../../img/back-big-polygon.svg");
-  background-repeat: no-repeat;
-  background-position-y: 193px;
-  background-position-x: 271px;
+  position: relative;
   padding-bottom: 78px;
   max-width: 1250px; }
+  .advantages__container::before {
+    content: "";
+    position: absolute;
+    width: 692px;
+    height: 730px;
+    left: 235px;
+    top: 33px;
+    background-image: url("../../img/backpolygon-advantages.svg");
+    background-repeat: no-repeat;
+    z-index: 50; }
 
 .advantages__list {
   display: -webkit-box;
@@ -725,7 +741,8 @@ header {
 
 .information__text-block {
   padding-bottom: 20px;
-  margin-left: -36px; }
+  margin-left: -36px;
+  z-index: 1; }
 
 .information__tablet {
   display: none; }
@@ -853,7 +870,8 @@ header {
 
 .tabs__img {
   z-index: 199;
-  opacity: 0.2; }
+  opacity: 0.2;
+  width: 100%; }
 
 .tabs__item-link::before {
   content: "";
@@ -995,7 +1013,8 @@ header {
   font-size: 16px;
   line-height: 22px;
   margin-top: 6px;
-  margin-left: 4px; }
+  margin-left: 4px;
+  z-index: 500; }
 
 .form__input {
   font-family: "PtMono", "Arial", sans-serif;
@@ -1057,8 +1076,11 @@ header {
   border: none;
   width: 547px;
   height: 141px;
+  color: #ffffff;
   padding-left: 20px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  overflow: hidden;
+  resize: none; }
   .from__textarea::-webkit-input-placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
@@ -1210,6 +1232,16 @@ textarea[name="comment"]::-ms-input-placeholder {
 textarea[name="comment"]::placeholder {
   color: #ffffff; }
 
+.form__img-block {
+  position: relative; }
+  .form__img-block::before {
+    content: "";
+    position: absolute;
+    width: 689px;
+    top: -140px;
+    height: 650px;
+    background-image: url("../../img/Group 18.svg"); }
+
 @media (max-width: 1023px) {
   .form__img {
     display: none; }
@@ -1261,7 +1293,11 @@ textarea[name="comment"]::placeholder {
     margin-left: -8px;
     padding-bottom: 15px;
     border-radius: 5px;
-    margin-right: 39px; } }
+    margin-right: 39px; }
+  .form__img-block {
+    position: relative; }
+    .form__img-block::before {
+      display: none; } }
 
 @media (max-width: 767px) {
   .form__input-block {

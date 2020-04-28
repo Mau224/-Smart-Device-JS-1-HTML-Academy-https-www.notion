@@ -64,6 +64,7 @@
   line-height: 22px;
   margin-top: 6px;
   margin-left: 4px;
+  z-index: 500;
 }
 
 
@@ -100,8 +101,11 @@
   border: none;
   width: 547px;
   height: 141px;
+  color: #ffffff;
   padding-left: 20px;
   padding-top: 15px;
+  overflow: hidden;
+  resize: none;
 
   &::placeholder {
     font-family: "PtMono", "Arial", sans-serif;
@@ -207,6 +211,19 @@ textarea[name="comment"]::placeholder {
   color: #ffffff;
 }
 
+.form__img-block {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 689px;
+    top: -140px;
+    height: 650px;
+    background-image: url("../../img/Group 18.svg");
+  }
+}
+
 @media (max-width: $tablet-width) {
   .form__img {
     display: none;
@@ -272,6 +289,14 @@ textarea[name="comment"]::placeholder {
     padding-bottom: 15px;
     border-radius: 5px;
     margin-right: 39px;
+  }
+
+  .form__img-block {
+    position: relative;
+
+    &::before {
+      display: none;
+    }
   }
 }
 
