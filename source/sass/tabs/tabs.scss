@@ -33,7 +33,6 @@
 
 .tabs__item-title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  width: 152px;
   position: relative;
   top: 108px;
   left: 44px;
@@ -42,6 +41,7 @@
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  z-index: 100;
 }
 
 .tabs__title {
@@ -57,10 +57,23 @@
 
 }
 
-.tabs__img {
-  z-index: 199;
+.tabs__img-block {
+  width: 370px;
+  height: 620px;
+  position: relative;
   opacity: 0.2;
-  width: 100%;
+
+  &--first-tab {
+    background: url("../../img/tabs1-desktop.png");
+  }
+
+  &--two-tab {
+    background: url("../../img/tabs2-desktop.png");
+  }
+
+  &--tree-tab {
+    background: url("../../img/tabs3-desktop.png");
+  }
 }
 
 .tabs__item-link {
@@ -98,9 +111,46 @@
     margin-left: 13px;
   }
 
+  .tabs__item-link {
+    width: 100%;
+    height: 256px;
+  }
+
+  .tabs__img-block {
+    width: 715px;
+    height: 256px;
+    position: relative;
+    opacity: 0.2;
+
+    &--first-tab {
+      background: url("../../img/tab1-tablet.png");
+    }
+
+    &--two-tab {
+      background: url("../../img/tab2-tablet.png");
+    }
+
+    &--tree-tab {
+      background: url("../../img/tab3-tablet.png");
+    }
+  }
+
   .tabs__item {
+    //width: 715px;
+    //height: 256px;
     margin: 0 0 -19px;
   }
+
+  //.tabs__img-block {
+  //  width: 715px;
+  //  height: 256px;
+  //}
+
+
+  //.tabs__img {
+  //  width: 715px;
+  //  height: 256px;
+  //}
 
   .tabs__title {
     width: 630px;
@@ -120,11 +170,6 @@
 
   .tabs__container {
     padding-bottom: 80px;
-  }
-
-  .tabs__img {
-    //width: 715px;
-    //height: 256px;
   }
 }
 
@@ -152,10 +197,31 @@
   }
 
   .tabs__img {
-    width: 100%;
+    width: 290px;
+    height: 256px;
   }
 
   .tabs__container {
     padding-bottom: 76px;
   }
+
+  .tabs__img-block {
+    width: 290px;
+    height: 256px;
+    position: relative;
+    opacity: 0.2;
+
+    &--first-tab {
+      background: url("../../img/tab1-mobail.png");
+    }
+
+    &--two-tab {
+      background: url("../../img/tab2-mobail.png");
+    }
+
+    &--tree-tab {
+      background: url("../../img/tab3-mobail.png");
+    }
+  }
+
 }
