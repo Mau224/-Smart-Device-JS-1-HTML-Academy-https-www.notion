@@ -64,7 +64,8 @@ a {
   text-transform: none;
   text-decoration: none;
   list-style: none;
-  color: #ffffff; }
+  color: #ffffff;
+  outline: none; }
   a:hover {
     color: #00b2ff; }
 
@@ -72,8 +73,10 @@ p {
   margin: 0;
   color: #ffffff; }
 
-button:hover {
-  color: black; }
+button {
+  outline: none; }
+  button:hover {
+    color: black; }
 
 input[type="text"] {
   color: #ffffff; }
@@ -528,6 +531,9 @@ header {
     background-repeat: no-repeat;
     z-index: 50; }
 
+.advantages__content-block {
+  width: 100%; }
+
 .advantages__list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -536,7 +542,7 @@ header {
   position: relative;
   z-index: 200;
   margin-top: 128px;
-  max-width: 1151px;
+  max-width: 1157px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,7 +572,7 @@ header {
     background-repeat: no-repeat; }
 
 .advantages__item {
-  width: 563px;
+  width: 49%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,7 +614,7 @@ header {
   font-size: 16px;
   line-height: 22px;
   color: #666666;
-  width: 483px;
+  max-width: 483px;
   margin-left: -10px;
   font-style: normal;
   font-weight: normal;
@@ -874,12 +880,15 @@ header {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 100px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 0;
-  margin-left: -7px; }
+  margin-left: -7px;
+  width: 100%;
+  max-width: 1200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .tabs__container {
   background: #1b2d37;
@@ -896,6 +905,7 @@ header {
   padding-bottom: 112px; }
 
 .tabs__item {
+  width: 370px;
   margin-left: 30px;
   position: relative; }
   .tabs__item::before {
@@ -919,7 +929,8 @@ header {
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
-  z-index: 100; }
+  z-index: 100;
+  width: 225px; }
 
 .tabs__title {
   font-style: normal;
@@ -1050,11 +1061,38 @@ header {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 96px; }
+  padding-top: 96px;
+  max-width: 1400px;
+  margin: 0 auto; }
+
+.form {
+  background: #00b2ff; }
+
+.form__title {
+  margin-left: 23px;
+  margin-top: -4px; }
+
+.form__content {
+  width: 570px;
+  margin-left: 23px; }
 
 .form__block {
-  margin-right: 168px;
-  position: relative; }
+  width: 50%;
+  /* margin-right: 168px; */
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
   .form__block::before {
     content: "";
     position: absolute;
@@ -1083,7 +1121,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 49px; }
+  margin-top: 49px;
+  width: 100%; }
   .form__input-block::before {
     content: "";
     position: absolute;
@@ -1111,9 +1150,9 @@ header {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  margin-top: 6px;
-  margin-left: 4px;
-  z-index: 500; }
+  z-index: 500;
+  margin-top: 9px;
+  margin-left: 43px; }
 
 .form__input {
   font-family: "PtMono", "Arial", sans-serif;
@@ -1125,9 +1164,10 @@ header {
   height: 50px;
   margin-bottom: 37px;
   color: #ffffff;
-  width: 246px;
-  margin-right: 34px;
+  width: 100%;
   padding-left: 20px; }
+  .form__input--right {
+    margin-right: 34px; }
   .form__input:invalid {
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -1294,12 +1334,18 @@ input:invalid::-moz-focus-inner {
   background-position: center; }
 
 .form__img {
-  position: relative;
-  top: 66px;
-  left: 195px; }
+  margin-top: 64px;
+  margin-right: 97px; }
 
 .form__img-block {
-  position: relative; }
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .form__img-block::before {
     content: "";
     position: absolute;

@@ -1,10 +1,12 @@
 .tabs__list {
   display: flex;
   list-style: none;
-  justify-content: center;
-  padding-bottom: 100px;
+  justify-content: flex-start;
   padding: 0;
   margin-left: -7px;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .tabs__container {
@@ -16,6 +18,7 @@
 }
 
 .tabs__item {
+  width: 370px;
   margin-left: 30px;
   position: relative;
 
@@ -43,6 +46,7 @@
   line-height: 30px;
   color: #ffffff;
   z-index: 100;
+  width: 225px;
 }
 
 .tabs__title {

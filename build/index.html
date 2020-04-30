@@ -52,7 +52,7 @@
   <section class="advantages">
     <div class="advantages__container">
       <ul class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--margin">
           <div class="advantages__content-block">
             <svg class="advantages__item-icon" width="29" height="35"><use xlink:href="img/sprite.svg#icon-clock"></use></svg>
             <p class="advantages__title">Оперативные сроки</p>
@@ -66,7 +66,7 @@
             <p class="advantages__text advantages__text--right-tablet advantages__text--mobail">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
           </div>
         </li>
-        <li class="advantages__item advantages__item--tablet-bottom">
+        <li class="advantages__item advantages__item--margin advantages__item--tablet-bottom">
           <div class="advantages__content-block">
             <svg class="advantages__item-icon advantages__item-icon--heat" width="36" height="31"><use xlink:href="img/sprite.svg#icon-heat"></use></svg>
             <p class="advantages__title advantages__title--bottom">Полная конфиденциальность</p>
@@ -111,7 +111,7 @@
             <div class="tabs__img-block tabs__img-block--two-tab"></div>
           </a>
         </li>
-        <li class="tabs__item">
+        <li class="tabs__item tabs__item--last">
           <a href="#" class="tabs__item-link">
             <p class="tabs__item-title tabs__item-title--tablet">Комплектующие<br>для светотехники</p>
             <div class="tabs__img-block tabs__img-block--tree-tab"></div>
@@ -130,10 +130,8 @@
         <p class="form__info">Мы проконсультируем Вас бесплатно</p>
         <form class="form__content" method="post" name="commentform" id="commentform">
           <div class="form__input-block">
-            <p><input class="form__input" type="text" name="author" id="author" size="25" placeholder="Имя">
-            </p>
-            <p><input class="form__input" type="text" name="phone" id="phone" placeholder="Телефон" required="">
-            </p>
+            <input class="form__input form__input--right" type="text" name="author" id="author" size="25" placeholder="Имя">
+            <input class="form__input" type="text" name="phone" id="phone" placeholder="Телефон" required="">
           </div>
           <p><textarea class="from__textarea" name="comment" id="comment" cols="50" placeholder="Ваш вопрос"></textarea>
           </p>

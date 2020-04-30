@@ -75,6 +75,7 @@ a {
   text-decoration: none;
   list-style: none;
   color: #ffffff;
+  outline: none;
 
   &:hover {
     color: $blue;
@@ -87,6 +88,8 @@ p {
 }
 
 button {
+  outline: none;
+
   &:hover {
     color: black;
   }
