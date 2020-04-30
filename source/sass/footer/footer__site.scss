@@ -28,8 +28,9 @@
   align-items: center;
   text-transform: uppercase;
   color: #1b2d37;
-  pointer-events: none;
+  cursor: pointer;
   display: flex;
+  margin-bottom: 7px;
 }
 
 .footer__site-item {
@@ -39,8 +40,8 @@
 }
 
 .footer__site {
-  margin-top: 65px;
-  margin-right: 260px;
+  margin-top: 57px;
+  margin-right: 266px;
 }
 
 
@@ -48,17 +49,19 @@
   .footer__site-list {
     height: auto;
     margin-left: -9px;
+    margin-top: -8px;
   }
 
   .footer__site-title {
     margin-bottom: 17px;
-    margin-left: -5px;
+    margin-left: -14px;
+    margin-top: -10px;
   }
 
   .footer__site {
     margin-right: 0;
-    margin-top: 32px;
-    margin-left: 31px;
+    margin-top: 56px;
+    margin-left: 12px;
   }
 
   .footer__site-item {
@@ -72,12 +75,14 @@
     display: none;
     margin-left: 0;
     padding-left: 15px;
+    padding-bottom: 20px;
   }
 
   .footer__site {
     margin-right: 0;
     margin-top: 20px;
     margin-left: 0;
+    padding-bottom: 20px;
   }
 
   .footer__site-title {
@@ -91,8 +96,10 @@
     border-top: 1px solid #626962;
     padding-top: 30px;
     position: relative;
-    padding-left: 22px;
+    padding-left: 30px;
+    cursor: pointer;
     pointer-events: auto;
+    margin-bottom: 0;
 
     &::before {
       content: "";
@@ -101,7 +108,7 @@
       background-color: #c4c4c4;
       position: absolute;
       top: 37px;
-      right: 0;
+      right: 18px;
       transition: all 0.3s ease 0s;
     }
 
@@ -113,7 +120,7 @@
       position: absolute;
       transform: rotate(90deg);
       top: 37px;
-      right: 0;
+      right: 18px;
       transition: all 0.3s ease 0s;
     }
   }

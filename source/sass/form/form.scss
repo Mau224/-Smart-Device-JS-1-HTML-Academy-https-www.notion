@@ -5,6 +5,7 @@
   padding-top: 96px;
 }
 
+
 .form__block {
   margin-right: 168px;
   position: relative;
@@ -82,14 +83,21 @@
   margin-right: 34px;
   padding-left: 20px;
 
+  &:invalid {
+    box-shadow: none;
+  }
+
   &::placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 22px;
     transform: translateY(-10px) translateY(50%);
   }
+}
+
+input:invalid::-moz-focus-inner {
+  border: 0;
 }
 
 .from__textarea {
@@ -129,6 +137,7 @@
   padding-bottom: 14px;
   border-radius: 5px;
   margin-right: 42px;
+  cursor: pointer;
 }
 
 
@@ -137,8 +146,8 @@
   justify-content: center;
   align-items: center;
   align-content: baseline;
-  margin-top: 27px;
-  padding-bottom: 101px;
+  margin-top: 22px;
+  padding-bottom: 97px;
 }
 
 .form__checkbox-text {
@@ -154,13 +163,10 @@
   margin-right: 20px;
   border: 1px solid #ffffff;
   background: $blue;
-}
-
-input[type="checkbox"] {
   display: none;
 }
 
-label {
+.form__label {
   cursor: default;
   font-weight: normal;
   line-height: 30px;
@@ -169,7 +175,7 @@ label {
   vertical-align: middle;
 }
 
-label::before {
+.form__label::before {
   content: "";
   display: inline-block;
   margin-right: 15px;
@@ -182,7 +188,7 @@ label::before {
   vertical-align: middle;
 }
 
-input:checked + label::before {
+.form__checkbox:checked + .form__label::before {
   /* глифон - галочка */
   content: "";
   height: 16px;
@@ -197,19 +203,6 @@ input:checked + label::before {
   position: relative;
   top: 66px;
   left: 195px;
-}
-
-input[type="text"] {
-  color: #ffffff;
-}
-
-input[type="text"]::placeholder {
-  color: #ffffff;
-  transform: translateY(50%);
-}
-
-textarea[name="comment"]::placeholder {
-  color: #ffffff;
 }
 
 .form__img-block {
@@ -242,7 +235,7 @@ textarea[name="comment"]::placeholder {
 
   .form__title {
     margin-top: -16px;
-    margin-left: 51px;
+    margin-left: 29px;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -251,11 +244,11 @@ textarea[name="comment"]::placeholder {
 
   .form__info {
     margin-top: 16px;
-    margin-left: 54px;
+    margin-left: 36px;
   }
 
   .form__content {
-    margin-left: 55px;
+    margin-left: 38px;
   }
 
   .form__input {
@@ -264,12 +257,15 @@ textarea[name="comment"]::placeholder {
   }
 
   .from__textarea {
-    width: 562px;
+    width: 568px;
+    height: 144px;
+    padding-left: 16px;
+    padding-top: 11px;
   }
 
   .form__submit-block {
     margin-top: 30px;
-    padding-bottom: 93px;
+    padding-bottom: 89px;
   }
 
   .form__input-block {
@@ -301,6 +297,14 @@ textarea[name="comment"]::placeholder {
   }
 }
 
+input::placeholder {
+  margin-left: -5px;
+}
+
+label {
+  padding-top: 14px;
+}
+
 @media (max-width: $mobile-width) {
   .form__input-block {
     display: flex;
@@ -317,8 +321,8 @@ textarea[name="comment"]::placeholder {
 
   .form__submit-block {
     flex-direction: column;
-    padding-bottom: 22px;
-    margin-top: 25px;
+    padding-bottom: 19px;
+    margin-top: 28px;
   }
 
   form {
@@ -343,8 +347,8 @@ textarea[name="comment"]::placeholder {
     align-content: baseline;
     justify-content: center;
     align-items: center;
-    margin-left: 18px;
-    margin-top: 10px;
+    margin-left: 5px;
+    margin-top: 7px;
   }
 
   .form__title {
@@ -352,11 +356,12 @@ textarea[name="comment"]::placeholder {
     margin-left: 20px;
     font-size: 28px;
     line-height: 140.62%;
+    margin-top: -13px;
   }
 
   .form__info {
     width: 238px;
-    margin-left: 24px;
+    margin-left: 21px;
     margin-right: 0;
   }
 

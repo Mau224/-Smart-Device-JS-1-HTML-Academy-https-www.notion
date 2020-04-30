@@ -18,18 +18,20 @@
 }
 
 .advantages__list {
-  display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
   position: relative;
   z-index: 200;
   margin-top: 128px;
+  max-width: 1151px;
+  display: flex;
+  justify-content: space-between;
 
   &::before {
     content: "";
     position: absolute;
-    left: -127px;
+    left: -174px;
     z-index: 10;
     top: -68px;
     width: 300px;
@@ -44,7 +46,7 @@
     transform: rotate(60deg);
     width: 300px;
     height: 300px;
-    right: -299px;
+    right: -347px;
     top: 339px;
     background: url("../../img/back-polygon.svg");
     background-repeat: no-repeat;
@@ -52,20 +54,19 @@
 }
 
 .advantages__item {
-  width: 511px;
+  width: 563px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border: 2px solid #ebebeb;
   border-left: 2px solid $blue;
   list-style: none;
-  margin-right: -12px;
   margin-bottom: 29px;
-  margin-left: 46px;
-  padding-left: 55px;
   height: 296px;
   z-index: 100;
+  margin-right: -15px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .advantages__title {
@@ -74,8 +75,9 @@
   color: #00b2ff;
   margin-left: -12px;
   position: relative;
-  top: -10px;
+  top: -11px;
   margin-bottom: 7px;
+  padding-left: 54px;
 
   &--bottom {
     margin-top: -34px;
@@ -97,6 +99,7 @@
   margin-left: -10px;
   font-style: normal;
   font-weight: normal;
+  padding-left: 53px;
 
   &--bottom {
     margin-top: -1px;
@@ -119,8 +122,8 @@
 .advantages__item-icon {
   fill: $blue;
   position: relative;
-  top: -35px;
-  right: 11px;
+  top: -28px;
+  right: -41px;
 
   &--heat {
     top: -66px;
@@ -159,7 +162,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 52px -14px 0 0;
+    margin: 52px 0 0 0;
 
     &::before {
       display: none;
@@ -174,6 +177,7 @@
     width: 291px;
     margin-left: 2px;
     margin-top: 1px;
+    padding-left: 0;
   }
 
   .advantages__item-icon {
@@ -205,6 +209,7 @@
     position: relative;
     top: -10px;
     margin-bottom: -2px;
+    padding-left: 0;
 
     &--right-tablet {
       margin-top: 20px;
@@ -226,7 +231,7 @@
     width: 260px;
     padding-left: 25px;
     margin-left: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   .advantages__title {

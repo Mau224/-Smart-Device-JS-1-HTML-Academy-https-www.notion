@@ -1,7 +1,7 @@
 .footer__office-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 24px;
+  margin-top: 15px;
 }
 
 .footer__office-title {
@@ -28,15 +28,23 @@
 
 .footer__office {
   position: relative;
-  left: 147px;
-  margin-top: 68px;
+  left: 135px;
+  margin-top: 59px;
 }
 
 @media (max-width: $tablet-width) {
   .footer__office {
     position: relative;
-    top: -36px;
+    top: -28px;
     left: 126px;
+  }
+
+  .footer__office-list {
+    margin-top: 11px;
+  }
+
+  .footer__office-title {
+    margin-left: -8px;
   }
 }
 
@@ -44,10 +52,10 @@
 @media (max-width: $mobile-width) {
   .footer__office-list {
     display: none;
-    padding-left: 15px;
-    margin-top: 66px;
+    padding-left: 16px;
+    margin-top: 75px;
     width: 200px;
-    margin-bottom: -43px;
+    margin-bottom: -34px;
   }
 
   .footer__office {
@@ -55,20 +63,16 @@
     left: 1px;
   }
 
-  .footer__social-list {
-    left: -15px;
-    top: 11px;
-  }
-
   .footer__office-title {
     padding-top: 30px;
     border-top: 1px solid #626962;
-    margin-bottom: 0;
     position: relative;
-    padding-left: 15px;
+    padding-left: 21px;
     pointer-events: auto;
-    margin-top: 9px;
+    margin-top: -14px;
+    padding-bottom: 15px;
     top: 35px;
+    margin-bottom: -19px;
 
     &::before {
       content: "";
@@ -77,7 +81,7 @@
       background-color: #c4c4c4;
       position: absolute;
       top: 35px;
-      right: 0;
+      right: 18px;
       transition: all 0.3s ease 0s;
     }
 
@@ -89,7 +93,7 @@
       position: absolute;
       transform: rotate(90deg);
       top: 35px;
-      right: 0;
+      right: 18px;
       transition: all 0.3s ease 0s;
     }
   }

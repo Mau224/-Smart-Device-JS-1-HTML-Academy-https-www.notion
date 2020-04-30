@@ -32,6 +32,7 @@
 
 .footer__social-logo {
   display: flex;
+  cursor: pointer;
 }
 
 .footer__container {
@@ -41,10 +42,9 @@
 }
 
 .footer__social {
-  margin-top: 71px;
-  position: relative;
-  left: 103px;
-  top: -8px;
+  margin-top: 67px;
+  margin-left: 155px;
+  margin-right: 0;
 }
 
 .footer__social-item {
@@ -62,7 +62,7 @@
 .footer__link-block {
   display: flex;
   justify-content: space-between;
-  margin-right: 230px;
+  margin-right: 280px;
   margin-top: -17px;
 }
 
@@ -72,11 +72,16 @@
     justify-content: space-around;
     align-content: baseline;
     align-items: center;
-    width: 768px;
-    margin-right: 184px;
+    width: 100%;
+    margin-left: -28px;
     margin-top: 18px;
     border-bottom: 1px solid #666666;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+  }
+
+  .footer__social-logo {
+    margin-left: 9px;
+    margin-top: -19px;
   }
 
   .footer__container {
@@ -101,26 +106,29 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    margin-left: 73px;
-
+    position: relative;
+    left: 68px;
+    top: -6px;
     align-items: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-left: -38px;
 
     color: #1b2d37;
   }
 
   .footer__social-list {
-    top: 0;
-    left: 7px;
+    top: -8px;
+    left: 38px;
   }
 
   .footer__title {
-    left: 8px;
+    left: 0;
   }
 
   .footer__title-info {
-    margin-left: 9px;
+    margin-left: 4px;
     margin-top: 6px;
   }
 }
@@ -129,8 +137,9 @@
   .footer__social {
     display: flex;
     flex-direction: column;
-    margin-top: 57px;
+    margin: 66px 0 0;
     border-bottom: none;
+    padding-bottom: 43px;
   }
 
   .footer__link-block {
@@ -139,29 +148,31 @@
     margin-right: 0;
   }
 
-  .block__title {
-    cursor: pointer;
-  }
-
   .footer__title-block {
     margin-left: 9px;
   }
 
   .footer__social-disabled-item {
-    margin-top: 23px;
-    margin-left: -12px;
+    margin-top: 30px;
+    margin-left: 0;
+    left: 0;
   }
 
   .footer__social-list {
-    left: -20px;
-    top: 14px;
+    left: -12px;
+    top: 7px;
   }
 
   .footer__social-logo {
-    margin-left: -13px;
+    margin-left: -4px;
   }
 
   .footer__title-info {
-    margin-top: 4px;
+    margin-top: 7px;
+    margin-left: 6px;
+  }
+
+  .footer__title {
+    left: 7px;
   }
 }

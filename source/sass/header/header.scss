@@ -5,9 +5,9 @@ header {
   background-position: center;
   padding-bottom: 39px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/head-desktop@2x.jpg");
-  }
+  //@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //  background-image: url("../../img/head-desktop@2x.jpg");
+  //}
 }
 
 @media (max-width: $tablet-width) {

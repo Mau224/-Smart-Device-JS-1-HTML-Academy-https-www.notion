@@ -92,8 +92,29 @@ button {
   }
 }
 
+input[type="text"] {
+  color: #ffffff;
+}
+
+input[type="text"]::placeholder {
+  color: #ffffff;
+}
+
+textarea[name="comment"]::placeholder {
+  color: #ffffff;
+}
+
+textarea[name="text"]::placeholder {
+  color: #ffffff;
+}
+
 span {
   margin: 0;
+}
+
+.block__title {
+  cursor: pointer;
+  padding: 10px;
 }
 
 header {

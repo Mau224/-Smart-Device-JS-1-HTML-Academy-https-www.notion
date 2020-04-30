@@ -3,6 +3,7 @@
 $(document).ready(function($) {
   $('.popup-open').click(function() {
     $('.popup-fade').fadeIn();
+    $('#name').focus();
     return false;
   });
 

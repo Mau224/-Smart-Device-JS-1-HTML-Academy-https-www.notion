@@ -31,7 +31,7 @@
   position: relative;
   background-image: url("../../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position-x: (10px);
+  background-position-x: 2px;
 }
 
 .main-nav__phone-link {
@@ -40,7 +40,7 @@
   position: relative;
   background-image: url("../../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position-x: (10px);
+  background-position-x: 2px;
 }
 
 .main-nav__header-btn {
@@ -62,11 +62,12 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .main-nav__contact-block {
   position: relative;
-  right: -57px;
+  right: -53px;
   top: 6px;
 }
 
@@ -74,6 +75,7 @@
 .main-nav__logo-container {
   display: flex;
   margin-left: 50px;
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width) {
@@ -81,10 +83,17 @@
     display: none;
   }
 
+  .main-nav__title-info {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 5px;
+  }
+
   .main-nav__contact-block {
     display: flex;
     flex-direction: row;
-    margin-right: 28px;
+    margin-right: 32px;
   }
 
   .main-nav__mail-link {
@@ -147,6 +156,6 @@
   }
 
   .main-nav__contact-block {
-    margin-right: 19px;
+    margin-right: 22px;
   }
 }

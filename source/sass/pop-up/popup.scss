@@ -117,6 +117,7 @@
   color: #ffffff;
   margin-top: 24px;
   margin-right: 24px;
+  cursor: pointer;
 }
 
 .popup__check-block {
@@ -168,8 +169,40 @@
   margin-top: -6px;
 }
 
-textarea[name="text"]::placeholder {
-  color: #ffffff;
+.popup__checkbox {
+  display: none;
+}
+
+.popup__label {
+  cursor: default;
+  font-weight: normal;
+  line-height: 30px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.popup__label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e3e3e3;
+  border-image: initial;
+  vertical-align: middle;
+}
+
+.popup__checkbox:checked + .popup__label::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background: url("../../img/chek1.svg");
+  background-repeat: no-repeat;
+  background-size: 8px 5px;
+  background-position: center;
 }
 
 @media (max-width: $tablet-width) {

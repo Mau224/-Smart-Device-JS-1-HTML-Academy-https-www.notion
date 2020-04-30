@@ -108,7 +108,7 @@
   .information__img {
     width: 242px;
     height: 363px;
-    left: -9px;
+    left: -32px;
     top: -7px;
   }
 
@@ -119,6 +119,10 @@
 
   .information {
     margin: 0 auto 67px;
+  }
+
+  .information__text-block {
+    margin-left: -53px;
   }
 }
 
@@ -163,6 +167,6 @@
 
   .information {
     max-width: 320px;
-    margin: 0 auto 60px;
+    margin: 0 auto 61px;
   }
 }
