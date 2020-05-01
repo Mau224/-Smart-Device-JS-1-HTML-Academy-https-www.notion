@@ -205,6 +205,10 @@
   background-position: center;
 }
 
+body.popup {
+  overflow: hidden;
+}
+
 @media (max-width: $tablet-width) {
   .popup {
     display: none;

@@ -37,6 +37,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth; }
 
+body.hidden {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden; }
+
 h1 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -536,7 +542,16 @@ header {
     z-index: 50; }
 
 .advantages__content-block {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  padding-top: 65px;
+  padding-bottom: 62px; }
+  .advantages__content-block--bottom {
+    padding-top: 104px;
+    padding-bottom: 107px; }
+  .advantages__content-block--bottom-right {
+    padding-bottom: 88px;
+    padding-top: 85px; }
 
 .advantages__list {
   -ms-flex-wrap: wrap;
@@ -591,7 +606,7 @@ header {
   border-left: 2px solid #00b2ff;
   list-style: none;
   margin-bottom: 29px;
-  height: 296px;
+  height: 100%;
   z-index: 100;
   margin-right: -15px;
   background-color: #ffffff;
@@ -895,7 +910,8 @@ header {
   width: 100%;
   max-width: 1200px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  height: 650px; }
 
 .tabs__container {
   background: #1b2d37;
@@ -909,27 +925,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 112px; }
+  padding-bottom: 141px; }
 
 .tabs__item {
   width: 370px;
   margin-left: 30px;
-  position: relative; }
-  .tabs__item::before {
-    content: "";
-    position: absolute;
-    width: 63px;
-    height: 63px;
-    bottom: 3px;
-    right: 0;
-    background: #00b2ff;
-    z-index: 300;
-    cursor: pointer; }
+  position: relative;
+  margin-top: 61px; }
 
 .tabs__item-title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   position: relative;
-  top: 111px;
+  top: -573px;
   left: 40px;
   font-style: normal;
   font-weight: normal;
@@ -953,38 +960,54 @@ header {
 .tabs__img-block {
   width: 370px;
   height: 620px;
-  position: relative;
-  opacity: 0.2; }
+  position: relative; }
   .tabs__img-block--first-tab {
-    background: url("../img/tabs1-desktop.png"); }
+    background: url("../img/tabs1-desktop.png");
+    opacity: 0.2; }
   .tabs__img-block--two-tab {
-    background: url("../img/tabs2-desktop.png"); }
+    background: url("../img/tabs2-desktop.png");
+    opacity: 0.2; }
   .tabs__img-block--tree-tab {
-    background: url("../img/tabs3-desktop.png"); }
+    background: url("../img/tabs3-desktop.png");
+    opacity: 0.2; }
 
-.tabs__item-link::before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 1px;
-  right: 25px;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  background: #ffffff;
-  bottom: 29px;
-  z-index: 300; }
+.tabs__block-before {
+  position: relative; }
+  .tabs__block-before::before {
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    bottom: 1px;
+    right: 0;
+    background: #00b2ff;
+    z-index: 300;
+    cursor: pointer; }
 
-.tabs__item-link::after {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 1px;
-  right: 25px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background: #ffffff;
-  bottom: 35px;
-  z-index: 300; }
+.tabs__block-marker {
+  position: relative; }
+  .tabs__block-marker::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    right: 25px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    background: #ffffff;
+    bottom: 30px;
+    z-index: 300; }
+  .tabs__block-marker::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    right: 25px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background: #ffffff;
+    bottom: 34px;
+    z-index: 300; }
 
 @media (max-width: 1023px) {
   .tabs__list {
@@ -1705,7 +1728,6 @@ label {
 .footer__site-list {
   list-style: none;
   padding-left: 0;
-  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1748,13 +1770,14 @@ label {
   margin-top: 21px; }
 
 .footer__site-item {
-  margin-right: 74px;
   width: 234px;
-  margin-top: 4px; }
+  margin-top: 4px;
+  margin-right: 10px; }
 
 .footer__site {
   margin-top: 57px;
-  margin-right: 133px; }
+  width: 100%;
+  max-width: 626px; }
 
 @media (max-width: 1023px) {
   .footer__site-list {
@@ -1859,7 +1882,7 @@ label {
   position: relative;
   margin-top: 59px;
   width: 333px;
-  margin-left: 48px; }
+  margin-left: 20px; }
 
 @media (max-width: 1023px) {
   .footer__office {
@@ -1938,7 +1961,7 @@ label {
   padding-top: 13px;
   padding-bottom: 15px; }
 
-.footer__item-info {
+.footer__bottom-item {
   font-family: "PtMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1951,24 +1974,26 @@ label {
   text-transform: uppercase;
   color: #1b2d37;
   opacity: 0.5; }
-  .footer__item-info--last {
-    width: 233px; }
-  .footer__item-info--margin {
+  .footer__bottom-item--last {
+    width: 233px;
+    margin-right: 15px; }
+  .footer__bottom-item--margin {
     margin-right: 40px; }
 
-.footer__block-info {
+.footer__bottom-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 910px; }
+  width: 910px;
+  margin-left: 24px; }
 
 @media (max-width: 1023px) {
-  .footer__item-info {
+  .footer__bottom-item {
     margin-right: 26px;
     margin-left: -3px; }
-    .footer__item-info--disabled {
+    .footer__bottom-item--disabled {
       display: none; }
   .footer__bottom-list {
     padding-left: 0;
@@ -1980,7 +2005,7 @@ label {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 0; }
-  .footer__block-info {
+  .footer__bottom-container {
     width: auto; } }
 
 @media (max-width: 767px) {
@@ -1990,7 +2015,7 @@ label {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 26px; }
-  .footer__item-info--mobail {
+  .footer__bottom-item--mobail {
     margin-top: 21px;
     margin-left: 29px; } }
 
@@ -2193,6 +2218,9 @@ label {
   background-repeat: no-repeat;
   background-size: 8px 5px;
   background-position: center; }
+
+body.popup {
+  overflow: hidden; }
 
 @media (max-width: 1023px) {
   .popup {

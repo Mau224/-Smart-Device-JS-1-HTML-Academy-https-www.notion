@@ -19,6 +19,19 @@
 
 .advantages__content-block {
   width: 100%;
+  height: 100%;
+  padding-top: 65px;
+  padding-bottom: 62px;
+
+  &--bottom {
+    padding-top: 104px;
+    padding-bottom: 107px;
+  }
+
+  &--bottom-right {
+    padding-bottom: 88px;
+    padding-top: 85px;
+  }
 }
 
 .advantages__list {
@@ -66,7 +79,7 @@
   border-left: 2px solid $blue;
   list-style: none;
   margin-bottom: 29px;
-  height: 296px;
+  height: 100%;
   z-index: 100;
   margin-right: -15px;
   background-color: #ffffff;

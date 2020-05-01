@@ -1,7 +1,6 @@
 .footer__site-list {
   list-style: none;
   padding-left: 0;
-  width: 250px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -38,14 +37,15 @@
 }
 
 .footer__site-item {
-  margin-right: 74px;
   width: 234px;
   margin-top: 4px;
+  margin-right: 10px;
 }
 
 .footer__site {
   margin-top: 57px;
-  margin-right: 133px;
+  width: 100%;
+  max-width: 626px;
 }
 
 

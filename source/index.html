@@ -67,17 +67,17 @@
           </div>
         </li>
         <li class="advantages__item advantages__item--margin advantages__item--tablet-bottom">
-          <div class="advantages__content-block">
+          <div class="advantages__content-block advantages__content-block--bottom">
             <svg class="advantages__item-icon advantages__item-icon--heat" width="36" height="31"><use xlink:href="img/sprite.svg#icon-heat"></use></svg>
             <p class="advantages__title advantages__title--bottom">Полная конфиденциальность</p>
-            <p class="advantages__text advantages__text--bottom">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+            <p class="advantages__text advantages__text--bottom">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--tablet advantages__item--tablet-bottom">
-          <div class="advantages__content-block">
+          <div class="advantages__content-block advantages__content-block--bottom-right">
             <svg class="advantages__item-icon advantages__item-icon--sells" width="35" height="35"><use xlink:href="img/sprite.svg#icon-sells"></use></svg>
             <p class="advantages__title advantages__title--right-bottom">Персонализация стоимости</p>
-            <p class="advantages__text advantages__text--bottom">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+            <p class="advantages__text advantages__text--bottom">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
           </div>
         </li>
       </ul>
@@ -95,26 +95,32 @@
     </div>
   </section>
   <section class="tabs">
-    <a name="bottom"></a>
+    <a href="#" name="bottom"></a>
     <div class="tabs__container">
       <h2 class="tabs__title">Service Device предлагает следующие товары и услуги</h2>
       <ul class="tabs__list">
         <li class="tabs__item">
           <a href="#" class="tabs__item-link">
-          <p class="tabs__item-title">Производство<br>печатных плат</p>
             <div class="tabs__img-block tabs__img-block--first-tab"></div>
+            <div class="tabs__block-before"></div>
+            <div class="tabs__block-marker"></div>
+              <p class="tabs__item-title">Производство<br>печатных плат</p>
           </a>
         </li>
         <li class="tabs__item">
           <a href="#" class="tabs__item-link">
-            <p class="tabs__item-title">Монтаж печатных<br>плат</p>
             <div class="tabs__img-block tabs__img-block--two-tab"></div>
+            <div class="tabs__block-before"></div>
+            <div class="tabs__block-marker"></div>
+            <p class="tabs__item-title">Монтаж печатных<br>плат</p>
           </a>
         </li>
         <li class="tabs__item tabs__item--last">
           <a href="#" class="tabs__item-link">
-            <p class="tabs__item-title tabs__item-title--tablet">Комплектующие<br>для светотехники</p>
             <div class="tabs__img-block tabs__img-block--tree-tab"></div>
+            <div class="tabs__block-before"></div>
+            <div class="tabs__block-marker"></div>
+            <p class="tabs__item-title tabs__item-title--tablet">Комплектующие<br>для светотехники</p>
           </a>
         </li>
       </ul>
@@ -130,15 +136,17 @@
         <p class="form__info">Мы проконсультируем Вас бесплатно</p>
         <form class="form__content"  method="post" name="commentform" id="commentform">
           <div class="form__input-block">
-            <input class="form__input form__input--right" type="text" name="author" id="author" size="25" placeholder="Имя" />
+            <label for="author"></label>
+            <input class="form__input form__input--right" type="text" name="author" id="author" size="25" placeholder="Имя" required/>
+            <label for="phone"></label>
             <input class="form__input" type="text" name="phone" id="phone" placeholder="Телефон" required />
           </div>
-          <p><textarea class="from__textarea" name="comment" id="comment" cols="50" placeholder="Ваш вопрос"></textarea>
-          </p>
+          <label for="comment"></label>
+          <textarea class="from__textarea" name="comment" id="comment" cols="50" placeholder="Ваш вопрос"></textarea>
           <div class="form__submit-block">
             <button name="submit" class="form__submit" type="submit" id="submit">Задать вопрос</button>
             <div class="form__check-block">
-              <input type="checkbox" class="form__checkbox" id="checkbox"/>
+              <input type="checkbox" class="form__checkbox" id="checkbox" required/>
               <label class="form__label" for="checkbox"></label>
               <p class="form__checkbox-text">Я согласен на обработку  персональных данных</p>
             </div>
@@ -147,9 +155,9 @@
       </div>
     </div>
   </section>
-  <footer>
-    <a name="footer"></a>
-    <a name="footer-mobail"></a>
+  <footer class="footer">
+    <a href="#" name="footer"></a>
+    <a href="#" name="footer-mobail"></a>
     <div class="footer__container">
       <div class="footer__social">
         <div class="footer__social-logo">
@@ -174,60 +182,62 @@
           </li>
         </ul>
       </div>
-      <div class="footer__link-block">
-      <div class="footer__site">
-        <h3 class="footer__site-title block__title">Разделы сайта</h3>
-        <ul class="footer__site-list">
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">О компании</a>
-          </li>
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">Продукты</a>
-          </li>
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">Производство печатных плат</a>
-          </li>
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">Монтаж печатных плат</a>
-          </li>
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">Комплектующие</a>
-          </li>
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">Доставка</a>
-          </li>
-          <li class="footer__site-item">
-            <a href="#" class="footer__site-text">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__office">
-        <h3 class="footer__office-title block__title">Наш офис</h3>
-          <ul class="footer__office-list">
-            <li class="footer__office-item">
-              <p class="footer__office-link">г. Мытищи, Олимпийский проспект, д.10</p>
+      <div class="block one">
+        <div class="footer__link-block">
+        <div class="footer__site">
+          <h3 class="footer__site-title block__title">Разделы сайта</h3>
+          <ul class="footer__site-list block-text">
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">О компании</a>
             </li>
-            <li class="footer__office-item">
-              <a href="tel:+74955894050" class="footer__office-link">+7 (495) 589-40-50</a>
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">Продукты</a>
             </li>
-            <li class="footer__office-item">
-              <a href="tel:+79250038767" class="footer__office-link">+7 (925) 003-87-67</a>
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">Производство печатных плат</a>
             </li>
-            <li class="footer__office-item">
-              <a href="tel:+792692608079" class="footer__office-link">+7 (926) 926-080-79</a>
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">Монтаж печатных плат</a>
+            </li>
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">Комплектующие</a>
+            </li>
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">Доставка</a>
+            </li>
+            <li class="footer__site-item">
+              <a href="#" class="footer__site-text">Контакты</a>
             </li>
           </ul>
+        </div>
+        <div class="footer__office">
+          <h3 class="footer__office-title block__title">Наш офис</h3>
+            <ul class="footer__office-list block-text">
+              <li class="footer__office-item">
+                <p class="footer__office-link">г. Мытищи, Олимпийский проспект, д.10</p>
+              </li>
+              <li class="footer__office-item">
+                <a href="tel:+74955894050" class="footer__office-link">+7 (495) 589-40-50</a>
+              </li>
+              <li class="footer__office-item">
+                <a href="tel:+79250038767" class="footer__office-link">+7 (925) 003-87-67</a>
+              </li>
+              <li class="footer__office-item">
+                <a href="tel:+792692608079" class="footer__office-link">+7 (926) 926-080-79</a>
+              </li>
+            </ul>
+        </div>
       </div>
     </div>
     </div>
     <div class="footer__bottom-block">
       <div class="footer__bottom-list">
-        <div class="footer__block-info">
-            <p class="footer__item-info footer__item-info--disabled">Все права защищены</p>
-            <p class="footer__item-info footer__item-info--disabled footer__item-info--margin">1999-2018 SD Service Devices</p>
-            <a href="#" class="footer__item-info">Условия конфиденциальности</a>
+        <div class="footer__bottom-container">
+            <p class="footer__bottom-item footer__bottom-item--disabled">Все права защищены</p>
+            <p class="footer__bottom-item footer__bottom-item--disabled footer__bottom-item--margin">1999-2018 SD Service Devices</p>
+            <a href="#" class="footer__bottom-item">Условия конфиденциальности</a>
         </div>
-        <p class="footer__item-info footer__item-info--last footer__item-info--mobail">Developed by wow studio</p>
+        <p class="footer__bottom-item footer__bottom-item--last footer__bottom-item--mobail">Developed by wow studio</p>
       </div>
     </div>
   </footer>
@@ -239,17 +249,17 @@
     <p class="popup__info">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="popup__form"  method="post" name="commentform" id="commentpopup">
       <div class="popup__block">
-        <p><input class="popup__input" type="text" name="name" id="name" size="25" placeholder="Имя"/>
-        </p>
-        <p><input class="popup__input" type="text" name="tel" id="tel" placeholder="Телефон" required />
-        </p>
+        <label for="name"></label>
+        <input class="popup__input" type="text" name="name" id="name" size="25" placeholder="Имя" required/>
+        <label for="tel"></label>
+        <input class="popup__input" type="text" name="tel" id="tel" placeholder="Телефон" required />
       </div>
-      <p><textarea class="popup__textarea" name="text" id="text" rows="8" placeholder="Ваш вопрос"></textarea>
-      </p>
+      <label for="text"></label>
+      <textarea class="popup__textarea" name="text" id="text" rows="8" placeholder="Ваш вопрос"></textarea>
       <div class="popup__submit-block">
         <button name="submit" class="popup__submit" type="submit" id="submit-btn">Отправить</button>
         <div class="popup__check-block">
-          <input type="checkbox" class="popup__checkbox" id="check"/>
+          <input type="checkbox" class="popup__checkbox" id="check" required/>
           <label class="popup__label" for="check"></label>
           <p class="popup__checkbox-text">Я согласен на обработку  персональных данных</p>
         </div>
