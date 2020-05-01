@@ -6,8 +6,9 @@
   line-height: 29px;
   color: #203c42;
   position: relative;
-  left: -6px;
-  top: 5px;
+  left: 3px;
+  top: 10px;
+  width: 165px;
 }
 
 .footer__title-info {
@@ -18,15 +19,15 @@
   line-height: 14px;
 
   color: #788891;
-  margin-top: 8px;
-  margin-left: -4px;
+  margin-top: 12px;
+  margin-left: 4px;
 }
 
 .footer__social-list {
   list-style: none;
   display: flex;
   position: relative;
-  left: -47px;
+  left: -41px;
   top: 34px;
 }
 
@@ -38,7 +39,7 @@
 .footer__container {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 
 .footer__social {
@@ -62,8 +63,10 @@
 .footer__link-block {
   display: flex;
   justify-content: space-between;
-  margin-right: 280px;
   margin-top: -17px;
+  width: 995px;
+  margin-right: 143px;
+
 }
 
 @media (max-width: $tablet-width) {

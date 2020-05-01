@@ -1527,8 +1527,9 @@ label {
   line-height: 29px;
   color: #203c42;
   position: relative;
-  left: -6px;
-  top: 5px; }
+  left: 3px;
+  top: 10px;
+  width: 165px; }
 
 .footer__title-info {
   font-family: "Roboto", "Arial", sans-serif;
@@ -1537,8 +1538,8 @@ label {
   font-size: 12px;
   line-height: 14px;
   color: #788891;
-  margin-top: 8px;
-  margin-left: -4px; }
+  margin-top: 12px;
+  margin-left: 4px; }
 
 .footer__social-list {
   list-style: none;
@@ -1546,7 +1547,7 @@ label {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  left: -47px;
+  left: -41px;
   top: 34px; }
 
 .footer__social-logo {
@@ -1561,7 +1562,7 @@ label {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 42px; }
+  margin-bottom: 32px; }
 
 .footer__social {
   margin-top: 67px;
@@ -1584,8 +1585,9 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 280px;
-  margin-top: -17px; }
+  margin-top: -17px;
+  width: 995px;
+  margin-right: 143px; }
 
 @media (max-width: 1023px) {
   .footer__social {
@@ -1704,7 +1706,10 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 124px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 9px;
+  margin-left: 1px;
+  margin-top: 21px; }
 
 .footer__site-text {
   font-family: "PtMono", "Arial", sans-serif;
@@ -1729,7 +1734,8 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 7px; }
+  margin-bottom: -13px;
+  margin-top: 21px; }
 
 .footer__site-item {
   margin-right: 74px;
@@ -1738,7 +1744,7 @@ label {
 
 .footer__site {
   margin-top: 57px;
-  margin-right: 266px; }
+  margin-right: 133px; }
 
 @media (max-width: 1023px) {
   .footer__site-list {
@@ -1820,6 +1826,8 @@ label {
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;
+  margin-left: -10px;
+  margin-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1839,8 +1847,9 @@ label {
 
 .footer__office {
   position: relative;
-  left: 135px;
-  margin-top: 59px; }
+  margin-top: 59px;
+  width: 333px;
+  margin-left: 48px; }
 
 @media (max-width: 1023px) {
   .footer__office {
@@ -1917,8 +1926,7 @@ label {
   padding-left: 0;
   width: 100%;
   padding-top: 13px;
-  padding-bottom: 15px;
-  margin-right: 64px; }
+  padding-bottom: 15px; }
 
 .footer__item-info {
   font-family: "PtMono", "Arial", sans-serif;
@@ -1933,6 +1941,8 @@ label {
   text-transform: uppercase;
   color: #1b2d37;
   opacity: 0.5; }
+  .footer__item-info--last {
+    width: 233px; }
   .footer__item-info--margin {
     margin-right: 40px; }
 
@@ -1942,8 +1952,7 @@ label {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 910px;
-  margin-left: 31px; }
+  width: 910px; }
 
 @media (max-width: 1023px) {
   .footer__item-info {
