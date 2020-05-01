@@ -11,6 +11,14 @@
   width: 165px;
 }
 
+.footer__item-icon {
+  fill:  #CDCDCD;
+
+  &:hover {
+    fill: black;
+  }
+}
+
 .footer__title-info {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;

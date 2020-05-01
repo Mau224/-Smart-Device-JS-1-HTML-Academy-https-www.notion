@@ -21,6 +21,10 @@
 }
 
 .main-nav__title-info {
+  font-family: "Roboto", "Arial", sans-serif;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 14px;
   color: #788891;
 }
 
@@ -29,7 +33,7 @@
   padding-right: 20px;
   margin-right: 60px;
   position: relative;
-  background-image: url("../../img/icon-mail.svg");
+  background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position-x: 2px;
 }
@@ -38,7 +42,7 @@
   padding-left: 40px;
   padding-right: 20px;
   position: relative;
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position-x: 2px;
 }

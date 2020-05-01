@@ -38,7 +38,7 @@
     right: -338px;
     top: 209px;
     height: 300px;
-    background: url("../../img/back-polygon.svg");
+    background: url("../img/back-polygon.svg");
     background-repeat: no-repeat;
     opacity: 0.2;
   }
@@ -51,7 +51,7 @@
     right: -338px;
     top: -35px;
     height: 300px;
-    background: url("../../img/polygon-mini-form.svg");
+    background: url("../img/polygon-mini-form.svg");
     background-repeat: no-repeat;
   }
 }
@@ -66,7 +66,7 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background-image: url("../../img/back-polygon.svg");
+    background-image: url("../img/back-polygon.svg");
     z-index: 200;
   }
 }
@@ -98,7 +98,6 @@
   font-weight: normal;
   background: deepskyblue;
   border: none;
-  border-radius: 5px;
   height: 50px;
   margin-bottom: 37px;
   color: #ffffff;
@@ -131,7 +130,6 @@ input:invalid::-moz-focus-inner {
   font-style: normal;
   font-weight: normal;
   background: deepskyblue;
-  border-radius: 5px;
   border: none;
   width: 547px;
   height: 141px;
@@ -219,7 +217,7 @@ input:invalid::-moz-focus-inner {
   content: "";
   height: 16px;
   width: 16px;
-  background-image: url("../../img/check.svg");
+  background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-size: 8px 5px;
   background-position: center;
@@ -242,7 +240,7 @@ input:invalid::-moz-focus-inner {
     width: 689px;
     top: -140px;
     height: 650px;
-    background-image: url("../../img/Group 18.svg");
+    background-image: url("../img/Group 18.svg");
   }
 }
 

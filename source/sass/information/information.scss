@@ -39,7 +39,7 @@
     left: -468px;
     top: -330px;
     transform: rotate(180deg);
-    background: url("../../img/back-big-polygon.svg");
+    background: url("../img/back-big-polygon.svg");
     background-repeat: no-repeat;
   }
 }
@@ -55,6 +55,11 @@
   border: 2px solid $blue;
   padding: 14px 48px;
   margin-left: 8px;
+
+  &:hover {
+    color: black;
+    border: 2px solid black;
+  }
 }
 
 .information__img {
