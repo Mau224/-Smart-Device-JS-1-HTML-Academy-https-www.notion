@@ -170,7 +170,6 @@ input:invalid::-moz-focus-inner {
   cursor: pointer;
 }
 
-
 .form__submit-block {
   display: flex;
   justify-content: space-between;
@@ -266,11 +265,13 @@ input:invalid::-moz-focus-inner {
 
   .form__block {
     margin-right: 0;
+    width: auto;
+    align-items: flex-start;
   }
 
   .form__title {
     margin-top: -16px;
-    margin-left: 29px;
+    margin-left: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -279,11 +280,11 @@ input:invalid::-moz-focus-inner {
 
   .form__info {
     margin-top: 16px;
-    margin-left: 36px;
+    margin-left: 5px;
   }
 
   .form__content {
-    margin-left: 38px;
+    margin-left: 6px;
   }
 
   .form__input {
@@ -305,6 +306,7 @@ input:invalid::-moz-focus-inner {
 
   .form__input-block {
     margin-top: 53px;
+    width: 592px;
   }
 
   .form__submit {
@@ -317,10 +319,9 @@ input:invalid::-moz-focus-inner {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     padding-top: 14px;
-    margin-left: -8px;
+    margin-left: 1px;
     padding-bottom: 15px;
     border-radius: 5px;
-    margin-right: 39px;
   }
 
   .form__img-block {
@@ -329,6 +330,10 @@ input:invalid::-moz-focus-inner {
     &::before {
       display: none;
     }
+  }
+
+  .form__check-block {
+    width: 44%;
   }
 }
 
@@ -357,7 +362,7 @@ label {
   .form__submit-block {
     flex-direction: column;
     padding-bottom: 19px;
-    margin-top: 28px;
+    margin-top: 18px;
   }
 
   form {
@@ -367,8 +372,7 @@ label {
   }
 
   .form__input {
-    margin: 0;
-    margin-bottom: 31px;
+    margin: 0 0 16px;
     width: 274px;
   }
 
@@ -384,19 +388,20 @@ label {
     align-items: center;
     margin-left: 5px;
     margin-top: 7px;
+    width: auto;
   }
 
   .form__title {
     width: 310px;
-    margin-left: 20px;
     font-size: 28px;
     line-height: 140.62%;
     margin-top: -13px;
+    margin-left: 157px;
   }
 
   .form__info {
     width: 238px;
-    margin-left: 21px;
+    margin-left: 159px;
     margin-right: 0;
   }
 
@@ -412,7 +417,6 @@ label {
   }
 
   .form__content {
-    margin-left: 3px;
+    margin-left: 18px;
   }
-
 }

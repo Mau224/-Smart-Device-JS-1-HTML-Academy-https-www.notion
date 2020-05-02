@@ -82,7 +82,7 @@
 @media (max-width: $tablet-width) {
   .information__text {
     width: 531px;
-    margin-left: 0;
+    margin-right: 9px;
 
     &--two {
       margin-top: 20px;
@@ -94,7 +94,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    margin-left: -2px;
+    margin-left: 1px;
     margin-top: -6px;
     line-height: 140.62%;
     margin-bottom: 25px;
@@ -108,19 +108,16 @@
     display: inline-block;
   }
 
-  .information__container {
-  }
-
   .information__img {
     width: 242px;
     height: 363px;
-    left: -32px;
+    left: -2px;
     top: -7px;
   }
 
   .information__link {
     padding: 14px 48px;
-    margin-left: 1px;
+    margin-left: 4px;
   }
 
   .information {
@@ -128,7 +125,7 @@
   }
 
   .information__text-block {
-    margin-left: -53px;
+    margin-left: -31px;
   }
 }
 
@@ -160,7 +157,7 @@
     margin-left: -5px;
 
     &--two {
-      margin-top: 39px;
+      margin-top: 42px;
       margin-bottom: 42px;
     }
   }
@@ -173,6 +170,6 @@
 
   .information {
     max-width: 320px;
-    margin: 0 auto 61px;
+    margin: 0 auto 59px;
   }
 }

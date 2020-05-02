@@ -75,7 +75,6 @@
   top: 6px;
 }
 
-
 .main-nav__logo-container {
   display: flex;
   margin-left: 99px;
@@ -97,7 +96,7 @@
   .main-nav__contact-block {
     display: flex;
     flex-direction: row;
-    margin-right: 32px;
+    margin-right: -1px;
   }
 
   .main-nav__mail-link {
@@ -160,6 +159,6 @@
   }
 
   .main-nav__contact-block {
-    margin-right: 22px;
+    margin-right: -54px;
   }
 }

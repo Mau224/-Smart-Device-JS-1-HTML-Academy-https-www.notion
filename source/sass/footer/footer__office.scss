@@ -38,7 +38,7 @@
   .footer__office {
     position: relative;
     top: -28px;
-    left: 126px;
+    left: 122px;
   }
 
   .footer__office-list {
@@ -50,19 +50,22 @@
   }
 }
 
-
 @media (max-width: $mobile-width) {
   .footer__office-list {
     display: none;
     padding-left: 16px;
-    margin-top: 75px;
+    margin-top: 65px;
     width: 200px;
     margin-bottom: -34px;
   }
 
   .footer__office {
     margin-top: 0;
-    left: 1px;
+    margin-left: 0;
+    width: auto;
+    margin-right: 0;
+    left: 0;
+
   }
 
   .footer__office-title {
@@ -72,7 +75,7 @@
     padding-left: 21px;
     pointer-events: auto;
     margin-top: -14px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     top: 35px;
     margin-bottom: -19px;
 
@@ -83,7 +86,7 @@
       background-color: #c4c4c4;
       position: absolute;
       top: 35px;
-      right: 18px;
+      right: 0;
       transition: all 0.3s ease 0s;
     }
 
@@ -95,7 +98,7 @@
       position: absolute;
       transform: rotate(90deg);
       top: 35px;
-      right: 18px;
+      right: 0;
       transition: all 0.3s ease 0s;
     }
   }

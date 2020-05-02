@@ -5,11 +5,11 @@ $(function () {
   $('#tel').mask('+7(999) 999-99-99');
 });
 
-$(document).ready(function () {
+$(window).resize(function () {
   $('.block__title').click(function (event) {
-    if($('.block').hasClass('one')) {
+    if($('.footer__link-block').hasClass('one')) {
       $('.block__title').not($(this)).removeClass('active');
-      $('.block__text').not($(this).next()).slideUp(300);
+      $('.footer__list').not($(this).next()).slideUp(300);
     }
     $(this).toggleClass('active').next().slideToggle(300);
   })

@@ -111,7 +111,7 @@
   font-family: "PtMono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #666;
+  color: #666666;
   max-width: 483px;
   /* width: 100%; */
   font-style: normal;
@@ -127,7 +127,6 @@
 .advantages__item:hover .advantages__text {
   color: #ffffff;
 }
-
 
 .advantages__item:hover {
   background: $blue;
@@ -181,6 +180,7 @@
     display: flex;
     justify-content: center;
     margin: 52px 0 0 0;
+    margin-left: 11px;
 
     &::before {
       display: none;
@@ -225,7 +225,7 @@
   .advantages__title {
     margin-left: 2px;
     position: relative;
-    top: -10px;
+    top: -14px;
     margin-bottom: -2px;
     padding-left: 0;
 
@@ -254,7 +254,7 @@
 
   .advantages__title {
     font-size: 20px;
-    top: 10px;
+    top: 7px;
     margin-bottom: 17px;
     line-height: 140.62%;
 

@@ -46,8 +46,8 @@
 
 @media (max-width: $tablet-width) {
   .footer__bottom-item {
-    margin-right: 26px;
-    margin-left: -3px;
+    margin-right: -34px;
+    margin-left: 4px;
 
     &--disabled {
       display: none;
@@ -57,7 +57,7 @@
   .footer__bottom-list {
     padding-left: 0;
     justify-content: space-between;
-    padding-top: 23px;
+    padding-top: 20px;
     align-items: center;
     margin-right: 0;
   }
@@ -70,13 +70,15 @@
 @media (max-width: $mobile-width) {
   .footer__bottom-list {
     flex-direction: column;
-    padding-top: 26px;
+    padding-top: 31px;
   }
 
   .footer__bottom-item {
+    margin-right: 4px;
+
     &--mobail {
       margin-top: 21px;
-      margin-left: 29px;
+      margin-left: 61px;
     }
   }
 }
