@@ -1,7 +1,7 @@
 .form__container {
   background: $blue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 96px;
   max-width: 1400px;
   margin: 0 auto;
@@ -12,23 +12,23 @@
 }
 
 .form__title {
-  margin-left: 23px;
+  margin-left: -261px;
   margin-top: -4px;
 }
 
 .form__content {
   width: 570px;
-  margin-left: 23px;
+  margin-left: -220px;
 }
 
 .form__block {
-  width: 50%;
+  width: 40%;
   /* margin-right: 168px; */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 
   &::before {
     content: "";
@@ -76,6 +76,8 @@
   align-content: baseline;
   justify-content: center;
   align-items: center;
+  margin-top: 3px;
+  width: 47%;
 }
 
 .form__info {
@@ -88,7 +90,7 @@
   z-index: 500;
 
   margin-top: 9px;
-  margin-left: 43px;
+  margin-left: -478px;
 }
 
 
@@ -152,22 +154,26 @@ input:invalid::-moz-focus-inner {
 .form__submit {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   width: 270px;
   color: #ffffff;
   border: 2px solid #ffffff;
   background: $blue;
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
+  padding-right: 14px;
   border-radius: 5px;
-  margin-right: 42px;
   cursor: pointer;
 }
 
 
 .form__submit-block {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: baseline;
   margin-top: 22px;
@@ -197,6 +203,7 @@ input:invalid::-moz-focus-inner {
   padding: 10px 0;
   margin-bottom: 20px;
   vertical-align: middle;
+  padding-top: 15px;
 }
 
 .form__label::before {
@@ -225,12 +232,13 @@ input:invalid::-moz-focus-inner {
 
 .form__img {
   margin-top: 64px;
-  margin-right: 97px;
+  margin-right: 236px;
+  z-index: 100;
 }
 
 .form__img-block {
   position: relative;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: flex-end;
 
@@ -238,8 +246,9 @@ input:invalid::-moz-focus-inner {
     content: "";
     position: absolute;
     width: 689px;
-    top: -140px;
+    top: -153px;
     height: 650px;
+    left: -76px;
     background-image: url("../img/Group 18.svg");
   }
 }

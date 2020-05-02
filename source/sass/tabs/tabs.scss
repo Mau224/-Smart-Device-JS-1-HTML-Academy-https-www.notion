@@ -3,9 +3,8 @@
   list-style: none;
   justify-content: flex-start;
   padding: 0;
-  margin-left: -7px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1171px;
   flex-wrap: wrap;
   height: 650px;
 }
@@ -19,17 +18,16 @@
 }
 
 .tabs__item {
-  width: 370px;
-  margin-left: 30px;
   position: relative;
   margin-top: 61px;
+  width: 33.3333%;
 }
 
 .tabs__item-title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   position: relative;
   top: -573px;
-  left: 40px;
+  left: 55px;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -37,6 +35,14 @@
   color: #ffffff;
   z-index: 100;
   width: 225px;
+
+  &--two {
+    left: 60px;
+  }
+
+  &--tree {
+    left: 73px;
+  }
 }
 
 .tabs__title {
@@ -53,23 +59,33 @@
 }
 
 .tabs__img-block {
-  width: 370px;
+  max-width: 370px;
   height: 620px;
   position: relative;
+  margin-left: 10px;
 
   &--first-tab {
-    background: url("../img/tabs1-desktop.png");
-    opacity: 0.2;
+    background: url("../img/tab1-desktop-opacity.png");
+    background-repeat: no-repeat;
   }
 
   &--two-tab {
-    background: url("../img/tabs2-desktop.png");
-    opacity: 0.2;
+    background: url("../img/tab2-desktop-opavity.png");
+    background-repeat: no-repeat;
   }
 
   &--tree-tab {
-    background: url("../img/tabs3-desktop.png");
-    opacity: 0.2;
+    background: url("../img/tab-desktop-test.png");
+    background-repeat: no-repeat;
+  }
+
+  &--center {
+    margin-left: 22px;
+  }
+
+  &--last {
+    margin-left: 24px;
+    margin-right: 0;
   }
 }
 
@@ -81,27 +97,28 @@
     position: absolute;
     width: 63px;
     height: 63px;
-    bottom: 1px;
-    right: 0;
+    right: 1px;
+    bottom: -619px;
+    z-index: 301;
     background: $blue;
-    z-index: 300;
     cursor: pointer;
   }
 }
 
 .tabs__block-marker {
   position: relative;
+  z-index: 620;
 
   &::before {
     content: "";
     position: absolute;
     width: 8px;
     height: 1px;
-    right: 25px;
     transform: rotate(-45deg);
     background: #ffffff;
-    bottom: 30px;
-    z-index: 300;
+    right: 27px;
+    bottom: -595px;
+    z-index: 350;
   }
 
   &::after {
@@ -109,11 +126,11 @@
     position: absolute;
     width: 8px;
     height: 1px;
-    right: 25px;
+    right: 27px;
     transform: rotate(45deg);
     background: #ffffff;
-    bottom: 34px;
-    z-index: 300;
+    bottom: -591px;
+    z-index: 350;
   }
 }
 
