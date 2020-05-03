@@ -34,6 +34,12 @@
   margin-left: 20px;
 }
 
+//@media (min-width: 768px) and (max-width: $tablet-width) {
+//  .footer__office-list {
+//    display: block !important;
+//  }
+//}
+
 @media (max-width: $tablet-width) {
   .footer__office {
     position: relative;

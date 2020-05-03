@@ -135,7 +135,7 @@ textarea[name="text"]::placeholder {
 span {
   margin: 0; }
 
-.block__title {
+.footer__block-title {
   cursor: pointer;
   padding: 10px; }
 
@@ -172,9 +172,13 @@ header {
 header {
   position: relative;
   background-image: url("../img/head-desktop.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 39px; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    header {
+      background-image: url("../img/head-desktop@2x.jpg"); } }
 
 @media (max-width: 1023px) {
   header {
@@ -198,6 +202,12 @@ header {
 
 @media (max-width: 767px) {
   header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-bottom: 70px;
     background-image: url("../img/head-mobail.jpg");
     background-repeat: no-repeat;
@@ -520,8 +530,9 @@ header {
     text-transform: uppercase;
     display: block;
     background: #00b2ff;
-    padding: 18px 32px;
-    width: 223px;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    width: 287px;
     border-radius: 2px;
     margin-left: 19px;
     text-align: center; } }
@@ -609,9 +620,11 @@ header {
   margin-bottom: 29px;
   height: 100%;
   z-index: 100;
-  margin-right: -15px;
+  margin-right: -10px;
   background-color: #ffffff;
   cursor: pointer; }
+  .advantages__item--margin {
+    margin-right: 20px; }
 
 .advantages__title {
   font-size: 24px;
@@ -668,9 +681,9 @@ header {
 @media (max-width: 1023px) {
   .advantages__item {
     width: 316px;
-    height: 306px;
+    height: 100%;
     padding-left: 25px;
-    margin: 0 30px 27px 0; }
+    margin: 0 30px 30px 0; }
     .advantages__item--tablet {
       margin-right: 0; }
     .advantages__item--tablet-bottom {
@@ -692,10 +705,21 @@ header {
     .advantages__list::after {
       display: none; }
   .advantages__text {
-    width: 291px;
+    width: 100%;
+    max-width: 291px;
     margin-left: 2px;
     margin-top: 1px;
     padding-left: 0; }
+  .advantages__content-block {
+    padding-top: 40px;
+    padding-bottom: 35px; }
+    .advantages__content-block--bottom {
+      padding-top: 61px; }
+    .advantages__content-block--bottom-right {
+      padding-top: 43px; }
+    .advantages__content-block--top {
+      padding-top: 19px;
+      padding-bottom: 17px; }
   .advantages__item-icon {
     top: -17px;
     right: -2px; }
@@ -765,7 +789,17 @@ header {
     .advantages__item-icon--sells {
       top: -8px; }
     .advantages__item-icon--heat {
-      top: -31px; } }
+      top: -31px; }
+  .advantages__content-block {
+    padding-top: 27px;
+    padding-bottom: 22px; }
+    .advantages__content-block--top {
+      padding-top: 27px;
+      padding-bottom: 22px; }
+    .advantages__content-block--bottom {
+      padding-top: 48px; }
+    .advantages__content-block--bottom-right {
+      padding-top: 21px; } }
 
 .information__title {
   font-size: 36px;
@@ -1278,7 +1312,7 @@ header {
 input:invalid::-moz-focus-inner {
   border: 0; }
 
-.from__textarea {
+.form__textarea {
   font-family: "PtMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1291,7 +1325,7 @@ input:invalid::-moz-focus-inner {
   padding-top: 15px;
   overflow: hidden;
   resize: none; }
-  .from__textarea::-webkit-input-placeholder {
+  .form__textarea::-webkit-input-placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1299,28 +1333,28 @@ input:invalid::-moz-focus-inner {
     line-height: 22px;
     -webkit-transform: translateY(-11px) translateY(50%);
             transform: translateY(-11px) translateY(50%); }
-  .from__textarea::-moz-placeholder {
+  .form__textarea::-moz-placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     transform: translateY(-11px) translateY(50%); }
-  .from__textarea:-ms-input-placeholder {
+  .form__textarea:-ms-input-placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     transform: translateY(-11px) translateY(50%); }
-  .from__textarea::-ms-input-placeholder {
+  .form__textarea::-ms-input-placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     transform: translateY(-11px) translateY(50%); }
-  .from__textarea::placeholder {
+  .form__textarea::placeholder {
     font-family: "PtMono", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1466,7 +1500,7 @@ input:invalid::-moz-focus-inner {
   .form__input {
     width: 255px;
     margin-bottom: 42px; }
-  .from__textarea {
+  .form__textarea {
     width: 568px;
     height: 144px;
     padding-left: 16px;
@@ -1531,7 +1565,7 @@ label {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 23px; }
-  .from__textarea {
+  .form__textarea {
     width: 270px;
     height: 89px; }
   .form__submit-block {

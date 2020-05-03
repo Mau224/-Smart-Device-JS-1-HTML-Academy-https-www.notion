@@ -37,7 +37,7 @@
     </div>
     <div class="header-content__img-block">
       <picture>
-        <source type="image/webp" media="(min-width: 1024px)" srcset="img/header-img.webp 1x, img/header-img@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1024px)" srcset="img/header-img.webp 1x, img/header-img@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)" srcset="img/header-img-tablet.webp 1x, img/header-img-tablet@2x.webp 2x">
         <source type="image/webp" media="(max-width: 767px)" srcset="img/header-img-mobail.webp 1x, img/header-img-mobail@2x.webp 2x">
 
@@ -60,7 +60,7 @@
           </div>
         </li>
         <li class="advantages__item advantages__item--tablet">
-          <div class="advantages__content-block">
+          <div class="advantages__content-block advantages__content-block--top">
             <svg class="advantages__item-icon advantages__item-icon--right-tablet" width="35" height="35"><use xlink:href="img/sprite.svg#icon-sups"></use></svg>
             <p class="advantages__title advantages__title--right-tablet">Крупные поставщики</p>
             <p class="advantages__text advantages__text--right-tablet advantages__text--mobail">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
@@ -135,7 +135,7 @@
             <input class="form__input" type="text" name="phone" id="phone" placeholder="Телефон" required="">
             <label for="phone" aria-label="input form mobail"></label>
           </div>
-          <textarea class="from__textarea" name="comment" id="comment" cols="50" placeholder="Ваш вопрос"></textarea>
+          <textarea class="form__textarea" name="comment" id="comment" cols="50" placeholder="Ваш вопрос"></textarea>
           <label for="comment" aria-label="text"></label>
           <div class="form__submit-block">
             <button name="submit" class="form__submit" type="submit" id="submit">Задать вопрос</button>
@@ -178,7 +178,7 @@
       </div>
       <div class="footer__link-block one">
         <div class="footer__site">
-          <h3 class="footer__site-title block__title">Разделы сайта</h3>
+          <h3 class="footer__site-title footer__block-title">Разделы сайта</h3>
           <div class="footer__site-list footer__list">
             <p class="footer__site-item">
               <a href="#" class="footer__site-text">О компании</a>
@@ -204,7 +204,7 @@
           </div>
         </div>
         <div class="footer__office">
-          <h3 class="footer__office-title block__title">Наш офис</h3>
+          <h3 class="footer__office-title footer__block-title">Наш офис</h3>
             <div class="footer__office-list footer__list">
               <p class="footer__office-item">
                 </p><p class="footer__office-link">г. Мытищи, Олимпийский проспект, д.10</p>
@@ -265,6 +265,6 @@
 <script src="js/storage.min.js"></script>
 <script src="js/svgxuse.min.js"></script>
 <script src="js/script.min.js"></script>
-<!--<script src="js/picturefill.min.js"></script>-->
+<script src="js/picturefill.min.js"></script>
 </body>
 </html>

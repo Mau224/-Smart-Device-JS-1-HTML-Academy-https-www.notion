@@ -6,12 +6,28 @@ $(function () {
 });
 
 $(document).ready(function () {
-  $('.block__title').click(function (event) {
+  $('.footer__block-title').click(function (event) {
     if($('.footer__link-block').hasClass('one')) {
-      $('.block__title').not($(this)).removeClass('active');
+      $('.footer__block-title').not($(this)).removeClass('active');
       $('.footer__list').not($(this).next()).slideUp(300);
     }
     $(this).toggleClass('active').next().slideToggle(300);
   })
 })
 
+$(document).ready(function() {
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+      elem = $('.footer__list');
+
+    if(windowWidth > 770) {
+      $(elem.attr('style', ''));
+    }
+  }
+
+  checkWidth();
+
+  $(window).resize(function() {
+    checkWidth();
+  });
+});
