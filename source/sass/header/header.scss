@@ -1,13 +1,14 @@
 header {
   position: relative;
-  background-image: url("../img/head-desktop.jpg");
+  background-image: url("../img/back-head.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 39px;
+  padding-bottom: 51px;
+  background-color: #000000;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/head-desktop@2x.jpg");
+    background-image: url("../img/back-head@2x.jpg");
   }
 }
 
@@ -15,17 +16,7 @@ header {
   header {
     display: flex;
     flex-direction: column;
-    background-image: url("../img/backheader-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: 2px;
-    background-position-y: 1px;
-    background-size: 100% 100%;
-    padding-bottom: 181px;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/backheader-tablet@2x.jpg");
-    }
+    padding-bottom: 188px;
   }
 }
 
@@ -33,13 +24,6 @@ header {
   header {
     display: flex;
     align-items: center;
-    padding-bottom: 70px;
-    background-image: url("../img/head-mobail.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/backhead-mobail@2x.jpg");
-    }
+    padding-bottom: 75px;
   }
 }

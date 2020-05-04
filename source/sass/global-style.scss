@@ -39,8 +39,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -125,34 +125,4 @@ span {
 .footer__block-title {
   cursor: pointer;
   padding: 10px;
-}
-
-header {
-  position: relative;
-  background-image: url("../img/head-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-bottom: 39px;
-}
-
-@media (max-width: $tablet-width) {
-  header {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../img/backheader-tablet.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-position-x: 2px;
-    background-position-y: 1px;
-    padding-bottom: 186px;
-  }
-}
-
-@media (max-width: $mobile-width) {
-  header {
-    padding-bottom: 76px;
-    background-image: url("../img/head-mobail.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }

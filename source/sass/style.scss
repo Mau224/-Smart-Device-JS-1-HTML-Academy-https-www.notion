@@ -1,7 +1,5 @@
-//@import "~normalize.css/normalize";
 @import "variables.scss";
 @import "global-style.scss";
-//@import "container.scss";
 @import "header/header.scss";
 @import "header/main-nav.scss";
 @import "header/header-content.scss";
@@ -10,7 +8,4 @@
 @import "tabs/tabs.scss";
 @import "form/form.scss";
 @import "footer/footer.scss";
-@import "footer/footer__site.scss";
-@import "footer/footer__office.scss";
-@import "footer/footer__bottom.scss";
 @import "pop-up/popup.scss";

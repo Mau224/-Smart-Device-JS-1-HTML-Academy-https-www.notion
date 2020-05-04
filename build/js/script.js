@@ -20,10 +20,8 @@ $(document).ready(function() {
     var windowWidth = $('body').innerWidth(),
       elem = $('.footer__list');
 
-    if (windowWidth > 770) {
+    if(windowWidth > 770) {
       $(elem.attr('style', ''));
-    } else {
-      $(window).trigger('resize');
     }
   }
 

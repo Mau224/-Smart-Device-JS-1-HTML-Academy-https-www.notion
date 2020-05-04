@@ -21,7 +21,7 @@
   width: 100%;
   height: 100%;
   padding-top: 65px;
-  padding-bottom: 62px;
+  padding-bottom: 22px;
 
   &--bottom {
     padding-top: 104px;
@@ -37,10 +37,9 @@
 .advantages__list {
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 auto;
   position: relative;
   z-index: 200;
-  margin-top: 128px;
+  margin: 105px auto 0;
   max-width: 1157px;
   display: flex;
   justify-content: space-between;
@@ -79,14 +78,13 @@
   border-left: 2px solid $blue;
   list-style: none;
   margin-bottom: 29px;
-  height: 100%;
   z-index: 100;
-  margin-right: -10px;
+  margin-right: -14px;
   background-color: #ffffff;
   cursor: pointer;
 
   &--margin {
-    margin-right: 20px;
+    margin-right: 25px;
   }
 }
 
@@ -106,7 +104,7 @@
 
   &--right-bottom {
     margin-top: -19px;
-    margin-left: -14px;
+    margin-left: -12px;
     margin-bottom: 6px;
   }
 }
@@ -117,14 +115,17 @@
   line-height: 22px;
   color: #666666;
   max-width: 483px;
-  /* width: 100%; */
   font-style: normal;
   font-weight: 400;
-  margin-left: 42px;
+  margin-left: 45px;
   margin-right: 20px;
 
   &--bottom {
     margin-top: -1px;
+  }
+
+  &--right-tablet {
+    padding-bottom: 40px;
   }
 }
 
@@ -147,11 +148,11 @@
   right: -41px;
 
   &--heat {
-    top: -66px;
+    top: -62px;
   }
 
   &--sells {
-    top: -51px;
+    top: -47px;
   }
 }
 
@@ -162,7 +163,6 @@
 @media (max-width: $tablet-width) {
   .advantages__item {
     width: 316px;
-    height: 100%;
     padding-left: 25px;
     margin: 0 30px 30px 0;
 
@@ -183,8 +183,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin: 52px 0 0 0;
-    margin-left: 11px;
+    margin: 48px 0 0 0;
 
     &::before {
       display: none;
@@ -201,11 +200,15 @@
     margin-left: 2px;
     margin-top: 1px;
     padding-left: 0;
+
+    &--right-tablet {
+      padding-bottom: 0;
+    }
   }
 
   .advantages__content-block {
     padding-top: 40px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
 
     &--bottom {
       padding-top: 61px;
@@ -249,20 +252,22 @@
     margin-left: 2px;
     position: relative;
     top: -14px;
-    margin-bottom: -2px;
+    margin-bottom: -6px;
     padding-left: 0;
 
     &--right-tablet {
-      margin-top: 20px;
+      margin-top: 24px;
+      margin-bottom: -7px;
     }
 
     &--right-bottom {
-      margin-top: -3px;
+      margin-top: 0;
       margin-bottom: -5px;
     }
 
     &--bottom {
       margin-top: -17px;
+      margin-bottom: 0;
     }
   }
 }
@@ -304,22 +309,23 @@
     flex-direction: column;
     justify-content: center;
     max-width: 320px;
-    margin: 37px auto 0;
+    margin: 26px auto 0;
   }
 
   .advantages__container {
     align-content: center;
+    padding-bottom: 31px;
   }
 
   .advantages__item-icon {
     top: -1px;
 
     &--sells {
-      top: -8px;
+      top: -2px;
     }
 
     &--heat {
-      top: -31px;
+      top: -22px;
     }
   }
 
@@ -338,6 +344,7 @@
 
     &--bottom-right {
       padding-top: 21px;
+      padding-bottom: 23px;
     }
   }
 }

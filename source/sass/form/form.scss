@@ -23,7 +23,6 @@
 
 .form__block {
   width: 40%;
-  /* margin-right: 168px; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -78,6 +77,7 @@
   align-items: center;
   margin-top: 3px;
   width: 47%;
+  cursor: pointer;
 }
 
 .form__info {
@@ -86,9 +86,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-
   z-index: 500;
-
   margin-top: 9px;
   margin-left: -478px;
 }
@@ -196,13 +194,13 @@ input:invalid::-moz-focus-inner {
 }
 
 .form__label {
-  cursor: default;
   font-weight: normal;
   line-height: 30px;
   padding: 10px 0;
   margin-bottom: 20px;
   vertical-align: middle;
   padding-top: 15px;
+  cursor: pointer;
 }
 
 .form__label::before {
@@ -219,7 +217,6 @@ input:invalid::-moz-focus-inner {
 }
 
 .form__checkbox:checked + .form__label::before {
-  /* глифон - галочка */
   content: "";
   height: 16px;
   width: 16px;
@@ -271,7 +268,7 @@ input:invalid::-moz-focus-inner {
 
   .form__title {
     margin-top: -16px;
-    margin-left: 0;
+    margin-left: -19px;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -280,11 +277,11 @@ input:invalid::-moz-focus-inner {
 
   .form__info {
     margin-top: 16px;
-    margin-left: 5px;
+    margin-left: -16px;
   }
 
   .form__content {
-    margin-left: 6px;
+    margin-left: -15px;
   }
 
   .form__input {
@@ -301,7 +298,7 @@ input:invalid::-moz-focus-inner {
 
   .form__submit-block {
     margin-top: 30px;
-    padding-bottom: 89px;
+    padding-bottom: 87px;
   }
 
   .form__input-block {
@@ -361,7 +358,7 @@ label {
 
   .form__submit-block {
     flex-direction: column;
-    padding-bottom: 19px;
+    padding-bottom: 22px;
     margin-top: 18px;
   }
 
@@ -396,12 +393,13 @@ label {
     font-size: 28px;
     line-height: 140.62%;
     margin-top: -13px;
-    margin-left: 157px;
+    margin-left: 142px;
   }
 
   .form__info {
     width: 238px;
-    margin-left: 159px;
+    margin-top: 12px;
+    margin-left: 141px;
     margin-right: 0;
   }
 
@@ -417,6 +415,6 @@ label {
   }
 
   .form__content {
-    margin-left: 18px;
+    margin-left: 0;
   }
 }

@@ -159,27 +159,26 @@
 
     &--first-tab {
       background: url("../img/tab1-tablet-opacity.png");
-      margin-left: 15px;
+      margin-left: -2px;
     }
 
     &--two-tab {
       background: url("../img/tab2-tablet-opacity.png");
-      margin-left: 18px;
+      margin-left: -2px;
     }
 
     &--tree-tab {
       background: url("../img/tab3-tablet-opacity.png");
+      margin-left: -2px;
     }
 
     &--last {
-      margin-left: 18px;
+      margin-left: 0;
     }
   }
 
   .tabs__item {
     width: auto;
-    //width: 715px;
-    //height: 256px;
     margin: 0 0 -14px;
 
     &::before {
@@ -187,30 +186,20 @@
     }
   }
 
-  //.tabs__img-block {
-  //  width: 715px;
-  //  height: 256px;
-  //}
-
-
-  //.tabs__img {
-  //  width: 715px;
-  //  height: 256px;
-  //}
-
   .tabs__title {
     width: 630px;
     padding-top: 44px;
-    margin: 0 0 63px -73px;
+    margin: 0 0 63px -88px;
     font-size: 32px;
   }
 
   .tabs__item-title {
-    top: -217px;
+    top: -220px;
+    left: 44px;
 
     &--tablet {
-      top: -206px;
-      left: 62px;
+      top: -208px;
+      left: 42px;
     }
   }
 
@@ -247,13 +236,13 @@
     font-size: 28px;
     padding-top: 50px;
     line-height: 140.62%;
-    margin-left: 28px;
+    margin-left: 7px;
     margin-bottom: 59px;
   }
 
   .tabs__item-title {
     top: -235px;
-    left: 53px;
+    left: 36px;
 
     &--tablet {
       top: -225px;
@@ -277,17 +266,21 @@
     width: 290px;
     height: 256px;
     position: relative;
+    margin-left: 1px;
 
     &--first-tab {
       background: url("../img/tab1-mobail-opacity.png");
+      margin-left: 1px;
     }
 
     &--two-tab {
       background: url("../img/tab2-mobail-opacity.png");
+      margin-left: 1px;
     }
 
     &--tree-tab {
       background: url("../img/tab3-mobail-opacity.png");
+      margin-left: 1px;
     }
   }
 

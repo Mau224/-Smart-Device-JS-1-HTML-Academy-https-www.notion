@@ -7,7 +7,18 @@
 
 .header-content__text-block {
   position: relative;
-  right: -90px;
+  right: -46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 689px;
+    top: -199px;
+    height: 650px;
+    right: -658px;
+    background: url("../img/Group 18.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .header-content__title-info {
@@ -16,7 +27,7 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
-  margin-top: 20px;
+  margin-top: 27px;
   position: relative;
   margin-left: 98px;
   margin-bottom: 63px;
@@ -35,14 +46,14 @@
 }
 
 .header-content__main-title {
-  width: 718px;
+  width: 740px;
   margin-right: 71px;
 }
 
 .header-content__link {
   background: #00b2ff;
   padding: 17px 47px;
-  margin-left: 97px;
+  margin-left: 95px;
   margin-top: 39px;
   border-radius: 5px;
   text-align: center;
@@ -67,22 +78,17 @@
   line-height: 16px;
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 91px;
+  bottom: 84px;
   left: -35px;
   opacity: 0.5;
 }
 
 .header-content__img {
   position: relative;
-  bottom: 69px;
-  right: -42px;
-}
-
-.header-content__img-block {
-  width: 640px;
-  z-index: 200;
-  background: url("../../img/dable-polygon.svg");
-  background-repeat: no-repeat;
+  bottom: 59px;
+  right: -24px;
+  width: 705px;
+  height: 515px;
 }
 
 .header-content__link-mobail {
@@ -113,7 +119,14 @@
   }
 
   .header-content__text-block {
-    left: 69px;
+    position: relative;
+    left: -38px;
+    right: 0;
+    z-index: 10000;
+
+    &::before {
+      display: none;
+    }
   }
 
   .header-content__link {
@@ -121,14 +134,15 @@
     padding: 20px 32px 18px;
     margin-left: 70px;
     font-size: 16px;
+    cursor: pointer;
   }
 
   .header-content__img {
     position: absolute;
     right: 0;
-    width: auto;
+    width: 255px;
     height: 334px;
-    bottom: 242px;
+    bottom: 245px;
   }
 
   .header-content__scroll-link {
@@ -137,6 +151,26 @@
 
   .header-content {
     margin-top: 116px;
+    justify-content: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .header-content__img-block {
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 772px;
+      top: -1px;
+      height: 640px;
+      right: 0;
+      background-image: url("../img/tablet-group.svg");
+      z-index: 0;
+    }
   }
 }
 
@@ -151,14 +185,25 @@
     top: -12px;
   }
 
+  .header-content__text-block {
+    top: -4px;
+    left: 0;
+    margin-left: 0;
+  }
+
   .header-content__img-block {
     position: relative;
     z-index: 90;
-  }
 
-  .header-content__text-block {
-    left: 0;
-    margin-left: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 338px;
+      top: -128px;
+      height: 640px;
+      right: -183px;
+      background-image: url("../img/mobail-group.svg");
+    }
   }
 
   .header-content__title-info {
@@ -166,8 +211,8 @@
     line-height: 156.8%;
     width: 245px;
     margin-left: 65px;
-    margin-top: 15px;
-    margin-bottom: 43px;
+    margin-top: 14px;
+    margin-bottom: 44px;
 
     &::before {
       width: 33px;
@@ -186,7 +231,7 @@
     position: relative;
     width: 301px;
     height: 220px;
-    bottom: -18px;
+    bottom: -13px;
     left: 22px;
     z-index: 90;
   }
@@ -212,5 +257,9 @@
     border-radius: 2px;
     margin-left: 19px;
     text-align: center;
+
+    &:hover {
+      color: #000000;
+    }
   }
 }
