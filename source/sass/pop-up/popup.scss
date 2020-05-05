@@ -16,12 +16,12 @@
 
 .popup {
   position: fixed;
-  top: 16%;
-  left: 49%;
-  width: 448px;
-  margin-left: -198px;
+  top: 15%;
+  left: 47%;
+  width: 451px;
+  margin-left: -186px;
   background: $blue;
-  border: 1px solid orange;
+  outline: none;
   border-radius: 4px;
   z-index: 99999;
   opacity: 1;
@@ -30,13 +30,14 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 20px 9px 20px 30px;
+  padding: 20px 9px 16px 30px;
 }
 
 .popup-close {
-  position: relative;
-  top: 10px;
-  right: 0;
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  padding: 10px;
 
   &::before {
     content: "";
@@ -45,15 +46,15 @@
     height: 1px;
     transform: rotate(45deg);
     background-color: #ffffff;
-    right: -216px;
-    top: -4px;
+    top: 12px;
+    right: 2px;
   }
 
   &::after {
     content: "";
     position: absolute;
-    right: -216px;
-    top: -4px;
+    top: 12px;
+    right: 2px;
     width: 23px;
     height: 1px;
     transform: rotate(-45deg);
@@ -114,10 +115,10 @@
   background-color: #00b2ff;
   border-radius: 5px;
   padding: 15px 25px;
-  width: 409px;
+  width: 411px;
   color: #ffffff;
   margin-top: 24px;
-  margin-right: 24px;
+  margin-right: 26px;
   cursor: pointer;
 }
 
@@ -127,7 +128,7 @@
   justify-content: center;
   align-content: baseline;
   margin-left: -71px;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .popup__info {
@@ -164,6 +165,10 @@
   opacity: 0.8;
   margin-left: 13px;
   margin-top: -6px;
+}
+
+.popup__bottom-margin {
+  margin-left: 8px;
 }
 
 .popup__checkbox {

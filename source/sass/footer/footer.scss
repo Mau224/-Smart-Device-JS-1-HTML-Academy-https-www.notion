@@ -48,6 +48,8 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 32px;
+  width: 100%;
+  max-width: 1760px;
 }
 
 .footer__social {
@@ -73,7 +75,7 @@
   justify-content: space-between;
   margin-top: -17px;
   width: 995px;
-  margin-right: 143px;
+  //margin-right: 143px;
 }
 
 .footer__site-list {
@@ -83,10 +85,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   height: 124px;
-  margin: 0 auto;
-  margin-bottom: 9px;
-  margin-left: 1px;
-  margin-top: 21px;
+  margin: 23px auto 9px 1px;
 }
 
 .footer__site-text {
@@ -118,7 +117,7 @@
 
 .footer__site-item {
   width: 234px;
-  margin-top: 4px;
+  margin-top: 1px;
   margin-right: 10px;
 }
 
@@ -160,8 +159,8 @@
 .footer__office {
   position: relative;
   margin-top: 54px;
-  width: 333px;
-  margin-left: 20px;
+  width: 350px;
+  margin-left: 34px;
 }
 
 .footer__bottom-block {
@@ -239,9 +238,9 @@
     display: flex;
     width: auto;
     justify-content: center;
-    margin-left: 25px;
+    margin-left: 0;
     margin-bottom: 28px;
-    margin-right: 144px;
+    margin-right: 122px;
   }
 
   .footer__social-disabled-item {
@@ -281,12 +280,12 @@
   .footer__site-list {
     height: auto;
     margin-left: -9px;
-    margin-top: -8px;
+    margin-top: -2px;
   }
 
   .footer__site-title {
     margin-bottom: 17px;
-    margin-left: -14px;
+    margin-left: -11px;
     margin-top: -13px;
   }
 
@@ -300,13 +299,14 @@
 
   .footer__site-item {
     margin-right: 0;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
   }
 
   .footer__office {
     position: relative;
     top: -28px;
-    left: 122px;
+    left: 141px;
+    margin-left: 0;
   }
 
   .footer__office-list {
@@ -353,6 +353,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    margin-bottom: 32px;
   }
 
   .footer__title-block {
@@ -360,7 +361,7 @@
   }
 
   .footer__social-disabled-item {
-    margin-top: 34px;
+    margin-top: 32px;
     margin-left: -1px;
     left: 0;
   }
@@ -410,7 +411,7 @@
     border-top: 1px solid #626962;
     padding-top: 30px;
     position: relative;
-    padding-left: 30px;
+    padding-left: 26px;
     cursor: pointer;
     pointer-events: auto;
     margin-bottom: 0;
@@ -461,7 +462,7 @@
   }
 
   .footer__office-title {
-    padding-top: 30px;
+    padding-top: 28px;
     border-top: 1px solid #626962;
     position: relative;
     padding-left: 21px;

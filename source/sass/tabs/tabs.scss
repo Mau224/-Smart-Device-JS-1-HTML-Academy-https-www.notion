@@ -4,7 +4,7 @@
   justify-content: flex-start;
   padding: 0;
   width: 100%;
-  max-width: 1171px;
+  max-width: 1180px;
   flex-wrap: wrap;
   height: 650px;
 }
@@ -103,6 +103,10 @@
     background: $blue;
     cursor: pointer;
   }
+
+  //&--last::before {
+  //  right: -9px;
+  //}
 }
 
 .tabs__block-marker {
@@ -117,7 +121,7 @@
     transform: rotate(-45deg);
     background: #ffffff;
     right: 27px;
-    bottom: -595px;
+    bottom: -591px;
     z-index: 350;
   }
 
@@ -129,9 +133,17 @@
     right: 27px;
     transform: rotate(45deg);
     background: #ffffff;
-    bottom: -591px;
+    bottom: -586px;
     z-index: 350;
   }
+
+  //&--last::before {
+  //  right: 20px;
+  //}
+  //
+  //&--last::after {
+  //  right: 20px;
+  //}
 }
 
 @media (max-width: $tablet-width) {

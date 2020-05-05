@@ -20,8 +20,9 @@ $(document).ready(function() {
     var windowWidth = $('body').innerWidth(),
       elem = $('.footer__list');
 
-    if(windowWidth > 770) {
+    if(windowWidth > 768) {
       $(elem.attr('style', ''));
+      $('.footer__block-title').removeClass('active');
     }
   }
 
