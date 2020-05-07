@@ -211,6 +211,10 @@ body.popup {
   overflow: hidden;
 }
 
+input[type=text], input[type=submit], textarea{
+  -webkit-appearance: none;
+}
+
 @media (max-width: $tablet-width) {
   .popup {
     display: none;

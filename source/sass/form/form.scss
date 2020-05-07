@@ -99,6 +99,7 @@
   background: deepskyblue;
   border: none;
   height: 50px;
+  border-radius: 0;
   margin-bottom: 37px;
   color: #ffffff;
   width: 100%;
@@ -131,6 +132,7 @@ input:invalid::-moz-focus-inner {
   font-weight: normal;
   background: deepskyblue;
   border: none;
+  border-radius: 0;
   width: 547px;
   height: 141px;
   color: #ffffff;
@@ -249,6 +251,10 @@ input:invalid::-moz-focus-inner {
   }
 }
 
+input[type=text] {
+  -webkit-appearance: none;
+}
+
 @media (max-width: $tablet-width) {
   .form__img {
     display: none;
@@ -362,12 +368,13 @@ label {
   .form__textarea {
     width: 270px;
     height: 89px;
+    padding-top: 16px;
   }
 
   .form__submit-block {
     flex-direction: column;
     padding-bottom: 16px;
-    margin-top: 22px;
+    margin-top: 16px;
   }
 
   form {
@@ -379,6 +386,7 @@ label {
   .form__input {
     margin: 0 0 16px;
     width: 274px;
+    line-height: 22px;
   }
 
   .form__submit {
