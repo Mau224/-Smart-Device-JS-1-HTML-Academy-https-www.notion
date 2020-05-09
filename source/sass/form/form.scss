@@ -230,18 +230,24 @@ input:invalid::-moz-focus-inner {
 }
 
 .form__img {
-  display: block;
   margin-top: 64px;
   margin-right: 236px;
   z-index: 100;
   width: 100%;
   max-width: 511px;
-  height: 280px;
+
+  background-image: url("../img/airplane.png");
+  background-repeat: no-repeat;
 }
+
+//.form__img-content {
+//  display: flex;
+//}
 
 .form__img-block {
   position: relative;
   width: 60%;
+  max-width: 511px;
   display: flex;
   justify-content: flex-end;
 
