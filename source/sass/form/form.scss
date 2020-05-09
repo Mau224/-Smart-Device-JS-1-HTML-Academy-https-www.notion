@@ -11,6 +11,7 @@
   background: #00b2ff;
 }
 
+
 .form__title {
   margin-left: -261px;
   margin-top: -4px;
@@ -229,9 +230,13 @@ input:invalid::-moz-focus-inner {
 }
 
 .form__img {
+  display: block;
   margin-top: 64px;
   margin-right: 236px;
   z-index: 100;
+  width: 100%;
+  max-width: 511px;
+  height: 280px;
 }
 
 .form__img-block {

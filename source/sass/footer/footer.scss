@@ -46,15 +46,16 @@
 
 .footer__container {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 32px;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1760px;
+  max-width: 1480px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 
 .footer__social {
   margin-top: 60px;
-  margin-left: 155px;
+  margin-left: 39px;
   margin-right: 0;
 }
 
@@ -74,7 +75,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: -17px;
-  width: 995px;
+  width: 1022px;
+  margin-left: 71px;
   //margin-right: 143px;
 }
 
@@ -116,7 +118,6 @@
 }
 
 .footer__site-item {
-  width: 234px;
   margin-top: 1px;
   margin-right: 10px;
 }
@@ -124,7 +125,7 @@
 .footer__site {
   margin-top: 50px;
   width: 100%;
-  max-width: 626px;
+  max-width: 510px;
 }
 
 .footer__office-list {
@@ -160,7 +161,7 @@
   position: relative;
   margin-top: 54px;
   width: 350px;
-  margin-left: 34px;
+  margin-right: 12px;
 }
 
 .footer__bottom-block {
