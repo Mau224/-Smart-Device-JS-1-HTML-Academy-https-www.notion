@@ -1483,12 +1483,12 @@ input:invalid::-moz-focus-inner {
   width: 100%;
   max-width: 511px;
   background-image: url("../img/airplane.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 .form__img-block {
   position: relative;
   width: 60%;
-  max-width: 511px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

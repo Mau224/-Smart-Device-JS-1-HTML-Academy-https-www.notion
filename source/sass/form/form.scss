@@ -235,9 +235,9 @@ input:invalid::-moz-focus-inner {
   z-index: 100;
   width: 100%;
   max-width: 511px;
-
   background-image: url("../img/airplane.png");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 //.form__img-content {
@@ -247,7 +247,7 @@ input:invalid::-moz-focus-inner {
 .form__img-block {
   position: relative;
   width: 60%;
-  max-width: 511px;
+  //max-width: 511px;
   display: flex;
   justify-content: flex-end;
 
