@@ -134,7 +134,7 @@ input:invalid::-moz-focus-inner {
   background: deepskyblue;
   border: none;
   border-radius: 0;
-  width: 547px;
+  width: 551px;
   height: 141px;
   color: #ffffff;
   padding-left: 15px;
@@ -169,6 +169,11 @@ input:invalid::-moz-focus-inner {
   padding-right: 14px;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover {
+    color: black;
+    border: 2px solid black;
+  }
 }
 
 .form__submit-block {
@@ -217,6 +222,10 @@ input:invalid::-moz-focus-inner {
   border: 1px solid #e3e3e3;
   border-image: initial;
   vertical-align: middle;
+
+  &:hover {
+    border: 1px solid black;
+  }
 }
 
 .form__checkbox:checked + .form__label::before {
@@ -238,6 +247,7 @@ input:invalid::-moz-focus-inner {
   background-image: url("../img/airplane.png");
   background-repeat: no-repeat;
   background-size: contain;
+  margin-left: 10px;
 }
 
 //.form__img-content {
@@ -314,7 +324,7 @@ input[type=text] {
   }
 
   .form__submit-block {
-    margin-top: 30px;
+    margin-top: 26px;
     padding-bottom: 87px;
   }
 

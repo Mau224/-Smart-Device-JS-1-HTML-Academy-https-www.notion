@@ -79,6 +79,11 @@
   cursor: pointer;
   margin-top: -10px;
   margin-right: 5px;
+
+  &:hover {
+    border: 2px solid $blue;
+    color: $blue;
+  }
 }
 
 .main-nav__contact-block {
