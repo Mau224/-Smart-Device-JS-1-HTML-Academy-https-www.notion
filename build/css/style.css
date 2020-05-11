@@ -218,7 +218,7 @@ header {
   position: relative;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position-x: 2px; }
+  background-position-y: 3px; }
   .main-nav__mail-link:hover {
     background-size: 24px; }
 
@@ -228,7 +228,9 @@ header {
   position: relative;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position-x: 2px; }
+  background-position-y: 2px;
+  background-position-x: 4px;
+  padding-bottom: 2px; }
   .main-nav__phone-link:hover {
     background-size: 17px;
     background-position-y: -1px; }
@@ -288,7 +290,8 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-right: 16px; }
+    margin-right: 13px;
+    top: 3px; }
   .main-nav__mail-link {
     margin-right: 0;
     margin-top: 7px;
@@ -297,7 +300,9 @@ header {
     margin-top: 2px;
     background-size: 25px, 18px;
     -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+    background-position-x: 0;
+    padding-bottom: 0; }
   .main-nav {
     margin-left: 25px;
     padding-top: 24px;
@@ -560,7 +565,7 @@ header {
     position: absolute;
     width: 692px;
     height: 730px;
-    left: 235px;
+    left: 224px;
     top: 33px;
     background-image: url("../img/backpolygon-advantages.svg");
     background-repeat: no-repeat;
@@ -663,12 +668,15 @@ header {
   max-width: 483px;
   font-style: normal;
   font-weight: 400;
-  margin-left: 45px;
+  margin-left: 42px;
   margin-right: 20px; }
   .advantages__text--bottom {
     margin-top: -1px; }
   .advantages__text--right-tablet {
     padding-bottom: 40px; }
+
+.advantages__span {
+  padding-left: 10px; }
 
 .advantages__item:hover .advantages__text {
   color: #ffffff; }
@@ -705,6 +713,8 @@ header {
       margin-right: 0; }
     .advantages__item--tablet-bottom {
       height: 233px; }
+  .advantages__span {
+    display: none; }
   .advantages__container {
     padding-bottom: 29px; }
   .advantages__list {
@@ -764,8 +774,8 @@ header {
       margin-top: 24px;
       margin-bottom: -7px; }
     .advantages__title--right-bottom {
-      margin-top: 0;
-      margin-bottom: -5px; }
+      margin-bottom: -5px;
+      margin-top: 0; }
     .advantages__title--bottom {
       margin-top: -17px;
       margin-bottom: 0; } }
@@ -800,7 +810,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 320px;
-    margin: 26px auto 0; }
+    margin: 28px auto 0; }
   .advantages__container {
     -ms-flex-line-pack: center;
         align-content: center;
@@ -947,8 +957,8 @@ header {
     width: 294px;
     margin-left: -5px; }
     .information__text--two {
-      margin-top: 42px;
-      margin-bottom: 42px; }
+      margin-top: 40px;
+      margin-bottom: 40px; }
   .information__link {
     padding: 14px 51px;
     margin-left: -5px;
@@ -1150,8 +1160,8 @@ header {
     margin: 0 0 63px -88px;
     font-size: 32px; }
   .tabs__item-title {
-    top: -220px;
-    left: 44px; }
+    top: -218px;
+    left: 42px; }
     .tabs__item-title--tablet {
       top: -208px;
       left: 42px; }
@@ -1565,7 +1575,7 @@ input[type=text] {
   .form__content {
     margin-left: -15px; }
   .form__input {
-    width: 255px;
+    width: 262px;
     margin-bottom: 42px; }
   .form__textarea {
     width: 568px;
@@ -1688,7 +1698,7 @@ label {
     margin-left: 142px; }
   .form__info {
     width: 238px;
-    margin-top: 12px;
+    margin-top: 14px;
     margin-left: 141px;
     margin-right: 0; }
   .from__block {
@@ -1761,8 +1771,7 @@ label {
           justify-content: space-between;
   width: 100%;
   max-width: 1480px;
-  margin: 0 auto;
-  margin-bottom: 32px; }
+  margin: 0 auto 29px; }
 
 .footer__social {
   margin-top: 60px;
@@ -1802,7 +1811,7 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 124px;
-  margin: 23px auto 9px 1px; }
+  margin: 25px auto 9px 1px; }
 
 .footer__site-text {
   font-family: "PtMono", "Arial", sans-serif;
@@ -1896,7 +1905,7 @@ label {
   display: flex;
   padding-left: 0;
   width: 100%;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 15px; }
 
 .footer__bottom-item {

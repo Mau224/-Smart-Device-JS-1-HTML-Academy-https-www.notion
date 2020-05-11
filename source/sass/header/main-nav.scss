@@ -37,7 +37,7 @@
   position: relative;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position-x: 2px;
+  background-position-y: 3px;
 
   &:hover {
     background-size: 24px;
@@ -50,7 +50,9 @@
   position: relative;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position-x: 2px;
+  background-position-y: 2px;
+  background-position-x: 4px;
+  padding-bottom: 2px;
 
   &:hover {
     background-size: 17px;
@@ -116,7 +118,8 @@
   .main-nav__contact-block {
     display: flex;
     flex-direction: row;
-    margin-right: 16px;
+    margin-right: 13px;
+    top: 3px;
   }
 
   .main-nav__mail-link {
@@ -129,6 +132,8 @@
     margin-top: 2px;
     background-size: 25px, 18px;
     transition: all 1s ease-in-out;
+    background-position-x: 0;
+    padding-bottom: 0;
   }
 
   .main-nav {
